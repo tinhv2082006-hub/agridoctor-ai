@@ -1,0 +1,14 @@
+*.pem
+*.key
+*.jks
+*.keystore
+.env
+.env.*
+*.env
+agent-state.sqlite*
+__pycache__/
+*.pyc
+.local-ai/
+.gradle/
+build/
+local.properties

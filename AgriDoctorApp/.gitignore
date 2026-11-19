@@ -1,0 +1,8 @@
+.local-ai/
+backend/.venv/
+backend/__pycache__/
+backend/agent-state.sqlite*
+build/
+app/build/
+.gradle/
+local.properties

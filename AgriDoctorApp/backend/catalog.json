@@ -1,0 +1,3627 @@
+{
+  "version": "1.3",
+  "sources_accessed_on": "2026-11-11",
+  "v1_3_sources_accessed_on": "2026-11-14",
+  "crops": [
+    {
+      "id": "coffee",
+      "name": "Cà phê",
+      "scope": "Tây Nguyên, trọng tâm cà phê vối"
+    },
+    {
+      "id": "durian",
+      "name": "Sầu riêng",
+      "scope": "Tây Nguyên, Nam Bộ"
+    },
+    {
+      "id": "rice",
+      "name": "Lúa nước",
+      "scope": "Đồng bằng sông Cửu Long và đồng bằng sông Hồng"
+    }
+  ],
+  "cases": [
+    {
+      "id": "C01",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Gỉ sắt lá",
+      "organs": "lá",
+      "signs": "Mặt dưới lá có thể thấy lớp bột cam vàng, mặt trên có đốm vàng tương ứng.",
+      "follow_up": "Mặt dưới có lớp bột màu cam ngay dưới vết vàng không?",
+      "observation": "Chụp hai mặt cùng một lá và vài lá lân cận.",
+      "lookalikes": "Đốm mắt cua, vàng lá do nguyên nhân khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C02",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Nấm hồng",
+      "organs": "cành;thân",
+      "signs": "Cành có vùng đổi màu hồng và phần phía ngoài vết bệnh có thể khô.",
+      "follow_up": "Phần cành khô có đi kèm mảng hồng trên vỏ không?",
+      "observation": "Chụp vùng chuyển tiếp giữa cành xanh và cành khô, kể cả chỗ phân cành.",
+      "lookalikes": "Mọt đục cành, khô cành do điều kiện canh tác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C03",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Vàng lá thối rễ",
+      "organs": "rễ;tán",
+      "signs": "Cây sinh trưởng kém, vàng lá, rễ có thể thối hoặc sưng.",
+      "follow_up": "Cây vàng rải rác hay tập trung theo cụm?",
+      "observation": "Chụp toàn cây và gốc. Nếu cần lấy mẫu rễ, liên hệ đơn vị chuyên môn để được hướng dẫn.",
+      "lookalikes": "Thiếu nước, thiếu dinh dưỡng, rệp sáp rễ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C04",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Đốm mắt cua",
+      "organs": "lá;quả",
+      "signs": "Vết trên lá thường tròn, tâm sáng hơn và mép sẫm.",
+      "follow_up": "Đốm có tâm sáng và viền nâu không?",
+      "observation": "Chụp cận vài đốm và mặt dưới lá để kiểm tra thêm dấu hiệu khác.",
+      "lookalikes": "Gỉ sắt lá, đốm lá khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C05",
+      "crop_id": "coffee",
+      "category": "pest",
+      "title": "Rệp sáp chùm quả",
+      "organs": "quả;cuống quả",
+      "signs": "Cụm rệp phủ sáp trắng có thể nằm sát cuống hoặc bên trong chùm quả.",
+      "follow_up": "Cụm trắng nằm ở cuống quả hay cả trên cành?",
+      "observation": "Chụp toàn chùm và chỗ tiếp giáp cuống với quả. Ghi nhận số chùm có cụm trắng.",
+      "lookalikes": "Lớp bám bề mặt, rệp sáp vùng rễ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C06",
+      "crop_id": "coffee",
+      "category": "pest",
+      "title": "Rệp sáp vùng rễ",
+      "organs": "rễ;gốc",
+      "signs": "Có thể thấy cụm rệp ở cổ rễ hoặc rễ, kèm cây suy.",
+      "follow_up": "Vùng cổ rễ đã lộ có cụm trắng hay nhiều kiến không?",
+      "observation": "Chụp phần cổ rễ nhìn thấy và toàn tán. Nhờ người có chuyên môn nếu cần kiểm tra dưới đất.",
+      "lookalikes": "Vàng lá thối rễ, thiếu nước",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C07",
+      "crop_id": "coffee",
+      "category": "pest",
+      "title": "Mọt đục cành",
+      "organs": "cành",
+      "signs": "Cành bị héo hoặc khô, có thể thấy lỗ nhỏ tại đoạn bị hại.",
+      "follow_up": "Có lỗ nhỏ trên cành gần nơi phần ngọn bắt đầu héo không?",
+      "observation": "Chụp dọc cành và cận lỗ nếu thấy. Ghi số cành bị héo trên cây.",
+      "lookalikes": "Nấm hồng, cành gãy hoặc tổn thương khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C08",
+      "crop_id": "coffee",
+      "category": "pest",
+      "title": "Mọt đục quả",
+      "organs": "quả",
+      "signs": "Có thể thấy lỗ đục nhỏ ở phía đầu quả.",
+      "follow_up": "Lỗ có nằm ở đầu quả và xuất hiện trên nhiều quả không?",
+      "observation": "Chụp đầu quả có lỗ, toàn chùm và vài quả liền kề. Ghi giai đoạn quả.",
+      "lookalikes": "Tổn thương vỏ quả, đốm quả",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C09",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Khô cành khô quả nghi thán thư",
+      "organs": "lá;cành;quả",
+      "signs": "Có thể thấy vết sẫm lõm trên cành và tổn thương sẫm trên quả.",
+      "follow_up": "Vùng khô có ranh giới rõ hoặc vết lõm trên cành mang quả không?",
+      "observation": "Chụp quả và đoạn cành ngay trước vị trí bắt đầu khô.",
+      "lookalikes": "Nấm hồng, mọt đục cành, khô hạn",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C10",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Thối nứt thân",
+      "organs": "thân;gốc",
+      "signs": "Thân có vùng vỏ nứt hoặc thối. Mô tả mùi và diễn tiến giúp đánh giá thêm.",
+      "follow_up": "Vết nứt nằm ở gốc hay cao hơn? Có vùng vỏ mềm hoặc lỗ đục không?",
+      "observation": "Chụp toàn thân và vùng vỏ hư. Ghi vết lan theo chiều dọc hay quanh thân.",
+      "lookalikes": "Sâu đục thân, vết thương cơ học",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C11",
+      "crop_id": "coffee",
+      "category": "pest",
+      "title": "Nghi tuyến trùng hại rễ",
+      "organs": "rễ;tán",
+      "signs": "Tán sinh trưởng chậm và rễ có thể sưng, đổi màu hoặc tổn thương.",
+      "follow_up": "Rễ có nốt sần hay chỉ bị đen hoặc thối?",
+      "observation": "Chụp bộ rễ đã lộ và toàn tán. Nhờ đơn vị chuyên môn hướng dẫn lấy mẫu.",
+      "lookalikes": "Thối rễ do nấm, rệp sáp rễ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C12",
+      "crop_id": "coffee",
+      "category": "pest",
+      "title": "Nghi ấu trùng ve sầu hại rễ",
+      "organs": "rễ;tán",
+      "signs": "Cây có thể suy do ấu trùng gây hại rễ. Biểu hiện trên tán dễ trùng nguyên nhân khác.",
+      "follow_up": "Có thấy ấu trùng trong vùng đất quanh cây suy hoặc dấu hiệu tổn thương rễ không?",
+      "observation": "Chụp ấu trùng nếu đã thấy và toàn cây. Ghi vị trí các cây suy trong vườn.",
+      "lookalikes": "Tuyến trùng, rệp sáp rễ, thiếu nước",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C13",
+      "crop_id": "coffee",
+      "category": "pest",
+      "title": "Bọ xít muỗi trên cà phê chè",
+      "organs": "đọt;lá non;quả",
+      "signs": "Vết chích sẫm màu ở phần non có thể cần kiểm tra côn trùng và loài cà phê.",
+      "follow_up": "Đây là cà phê chè hay cà phê vối? Vết tập trung trên đọt non hay quả?",
+      "observation": "Chụp đọt, quả và côn trùng nếu thấy. Ghi giống hoặc loại cà phê.",
+      "lookalikes": "Đốm lá, tổn thương cơ học",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C14",
+      "crop_id": "coffee",
+      "category": "abiotic",
+      "title": "Nghi thiếu nước",
+      "organs": "lá;tán",
+      "signs": "Cây héo hoặc suy trong đợt khô kéo dài cần kiểm tra cùng tình trạng đất và lịch tưới.",
+      "follow_up": "Cây bắt đầu héo sau bao nhiêu ngày không mưa hoặc không tưới?",
+      "observation": "Chụp cây ở hai thời điểm trong ngày và ghi lịch tưới của từng khu.",
+      "lookalikes": "Rễ bị hại, úng vùng rễ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C15",
+      "crop_id": "coffee",
+      "category": "abiotic",
+      "title": "Nghi úng vùng rễ",
+      "organs": "rễ;tán",
+      "signs": "Cây vàng ở khu trũng hoặc sau mưa kéo dài cần đối chiếu tình trạng nước đọng.",
+      "follow_up": "Nước còn đọng ở gốc và các cây thấp hơn bị nặng hơn không?",
+      "observation": "Chụp mặt đất quanh gốc, vị trí thoát nước và toàn tán.",
+      "lookalikes": "Vàng lá thối rễ, thiếu dinh dưỡng",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C16",
+      "crop_id": "coffee",
+      "category": "abiotic",
+      "title": "Nghi thiếu đạm ở cây giống",
+      "organs": "lá già;cây giống",
+      "signs": "Ở cây giống, lá già có thể nhạt màu tương đối đều và cây sinh trưởng yếu.",
+      "follow_up": "Lá già vàng trước hay lá mới vàng trước?",
+      "observation": "Chụp cả tầng lá già và đọt. Ghi tuổi cây và lịch dinh dưỡng.",
+      "lookalikes": "Vấn đề rễ, các dạng thiếu dinh dưỡng khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C17",
+      "crop_id": "coffee",
+      "category": "abiotic",
+      "title": "Nghi thiếu magiê ở cây giống",
+      "organs": "lá già",
+      "signs": "Ở cây giống, vùng giữa gân lá già có thể vàng rõ hơn gân.",
+      "follow_up": "Vùng giữa gân vàng nhưng phần gân vẫn xanh không?",
+      "observation": "Chụp cận lá già và một lá non để đối chiếu. Ghi tuổi cây.",
+      "lookalikes": "Thiếu đạm, vàng lá do vấn đề rễ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C18",
+      "crop_id": "coffee",
+      "category": "abiotic",
+      "title": "Nghi thiếu kali ở cây giống",
+      "organs": "lá già",
+      "signs": "Ở cây giống, mép lá già có thể đổi màu hoặc khô.",
+      "follow_up": "Mép lá già hay mép lá non đổi màu trước?",
+      "observation": "Chụp trọn lá già và toàn cây. Ghi lịch tưới để phân biệt với thiếu nước.",
+      "lookalikes": "Khô hạn, tổn thương lá khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C19",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Lở cổ rễ cây con",
+      "organs": "cổ rễ;gốc;thân;rễ",
+      "signs": "Vùng cổ rễ sát mặt giá thể có thể thối sẫm và teo lại. Cây con có thể chậm lớn, vàng lá và suy dần.",
+      "follow_up": "Phần thân sát mặt bầu có bị thắt lại đúng ở chỗ vết thâm không?",
+      "observation": "Chụp toàn cây và cổ rễ ngang mặt bầu, kèm ảnh cây khỏe ở bên cạnh.",
+      "lookalikes": "Vàng lá thối rễ, úng bầu, tổn thương ở gốc",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C20",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Đốm lá nghi Corynespora",
+      "organs": "lá;gân lá;cuống lá;quả;cành",
+      "signs": "Trên cà phê vối Conilon ở Brazil, tài liệu ghi nhận đốm nâu có quầng vàng trên lá và có thể kèm rụng lá. Đốm sẫm trên quả có thể lan nhập lại.",
+      "follow_up": "Ngoài đốm có quầng vàng trên lá, cuống lá, gân lá hoặc quả có đốm tương tự không?",
+      "observation": "Chụp hai mặt lá và cả chùm quả nếu có đốm. Ghi loại cà phê đang trồng.",
+      "lookalikes": "Đốm mắt cua, gỉ sắt, các dạng đốm lá khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C21",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Cháy lá dạng mạng tơ",
+      "organs": "lá;cành",
+      "signs": "Tài liệu Brazil mô tả sợi nấm trắng như mạng nhện phủ lá và cành. Lá có thể khô rồi vẫn treo trên cành nhờ các sợi này.",
+      "follow_up": "Có lá đã khô nhưng còn treo trên cành bởi những sợi trắng nối liền không?",
+      "observation": "Chụp chỗ sợi trắng nối lá với cành và ảnh toàn phần tán bị hại.",
+      "lookalikes": "Mạng nhện thường, nấm hồng trên vỏ cành",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C22",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Đốm lá nghi Phoma",
+      "organs": "lá;cành;quả",
+      "signs": "Tài liệu Brazil ghi nhận mảng sẫm thường khởi đầu ở mép lá, đôi khi có các dải màu. Khi ẩm, có thể thấy chấm đen nhỏ trên vết bệnh.",
+      "follow_up": "Vết bắt đầu ở mép lá và có chấm đen li ti trên nền vết sẫm không?",
+      "observation": "Chụp rìa lá, bề mặt vết bệnh và cành có vết lõm nếu có.",
+      "lookalikes": "Đốm lá vi khuẩn, thán thư, cháy mép lá do điều kiện canh tác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C23",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Đốm lá cây giống nghi Myrothecium",
+      "organs": "lá",
+      "signs": "Trên cây giống ở Brazil, đốm nâu tròn có rìa vàng ở hai mặt lá. Vết già có thể có tâm xám và cụm chấm đen đi kèm sợi trắng.",
+      "follow_up": "Trên cùng vết đốm, có thấy cụm chấm đen kèm sợi trắng ở hai mặt lá không?",
+      "observation": "Chụp cả hai mặt của lá cây giống và ghi tình trạng ẩm trong vườn ươm.",
+      "lookalikes": "Đốm mắt cua, đốm lá nghi Phoma",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "C24",
+      "crop_id": "coffee",
+      "category": "disease",
+      "title": "Thối đen rễ nghi Rosellinia",
+      "organs": "rễ;cổ rễ;tán",
+      "signs": "Tài liệu Brazil ghi nhận cây vàng, héo và khô cành. Rễ gần cổ rễ có thể sẫm màu, với sợi trắng rồi sẫm dần ở mô bị hại.",
+      "follow_up": "Ở phần rễ đã lộ, có mảng sẫm kèm sợi bám hay chỉ thấy tán vàng?",
+      "observation": "Chụp toàn cây và rễ đã lộ. Nhờ cán bộ kỹ thuật kiểm tra mẫu để phân biệt với các nguyên nhân thối rễ khác.",
+      "lookalikes": "Vàng lá thối rễ, tuyến trùng, úng nước",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D01",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Thán thư lá",
+      "organs": "lá",
+      "signs": "Vết nâu có thể bắt đầu ở mép hoặc chóp lá và lan rộng.",
+      "follow_up": "Vết bắt đầu ở mép, chóp hay giữa lá?",
+      "observation": "Chụp cả hai mặt lá và toàn cành. Ghi thời điểm thấy đốm đầu tiên.",
+      "lookalikes": "Đốm lá, tổn thương do điều kiện canh tác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D02",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Xì mủ thân",
+      "organs": "thân;cành;gốc",
+      "signs": "Vùng vỏ sẫm, ẩm, có thể rỉ dịch.",
+      "follow_up": "Dịch chảy từ vết nứt tự nhiên hay từ vết thương nhìn thấy được?",
+      "observation": "Chụp sát vùng rỉ dịch và toàn thân đến gốc. Ghi tình trạng nước đọng sau mưa.",
+      "lookalikes": "Vết thương cơ học, côn trùng đục thân",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D03",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Cháy lá chết ngọn",
+      "organs": "lá;đọt",
+      "signs": "Lá bị cháy và phần đọt có thể suy hoặc khô.",
+      "follow_up": "Vết cháy chỉ trên lá hay đọt non cũng khô?",
+      "observation": "Chụp đọt và lá từ phần còn xanh đến phần khô, kèm ảnh toàn cành.",
+      "lookalikes": "Thán thư, tổn thương phi sinh học",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D04",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Đốm rong",
+      "organs": "lá;cành",
+      "signs": "Đốm tròn màu cam gạch hơi nổi trên mặt lá.",
+      "follow_up": "Đốm có nổi lên trên bề mặt lá không?",
+      "observation": "Chụp nghiêng dưới ánh sáng tự nhiên và lấy thêm ảnh toàn lá.",
+      "lookalikes": "Đốm lá phẳng, lớp bám bề mặt",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D05",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Thối quả",
+      "organs": "quả",
+      "signs": "Đốm sẫm trên vỏ có thể lan thành mảng nâu.",
+      "follow_up": "Đốm xuất hiện khi quả còn trên cây hay sau thu hoạch?",
+      "observation": "Chụp mặt có vết và phần cuống quả. Ghi nhận vết nứt hoặc lỗ nhìn thấy.",
+      "lookalikes": "Vết va đập, sâu đục quả",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D06",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Thối rễ",
+      "organs": "rễ;tán",
+      "signs": "Tán có thể vàng, thưa, cành non suy và rễ bị hư.",
+      "follow_up": "Hiện tượng xảy ra ở một cây hay thành cụm tại vùng trũng?",
+      "observation": "Chụp toàn tán và mặt đất quanh gốc. Nhờ cán bộ chuyên môn kiểm tra rễ nếu cây suy nhanh.",
+      "lookalikes": "Úng nước, tổn thương rễ khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D07",
+      "crop_id": "durian",
+      "category": "pest",
+      "title": "Rầy nhảy",
+      "organs": "lá non;đọt",
+      "signs": "Đọt và lá non bị hại, lá có thể biến dạng hoặc khô.",
+      "follow_up": "Mặt dưới lá non có côn trùng nhỏ hay vết bất thường không?",
+      "observation": "Chụp đọt và mặt dưới vài lá non. Ghi số cây có dấu hiệu tương tự.",
+      "lookalikes": "Nhện hại, tổn thương lá non khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D08",
+      "crop_id": "durian",
+      "category": "pest",
+      "title": "Rệp sáp hại quả",
+      "organs": "quả;cuống quả",
+      "signs": "Có cụm côn trùng phủ sáp trắng ở quả hoặc gần cuống.",
+      "follow_up": "Lớp trắng là từng cụm nhỏ hay mảng phủ đều?",
+      "observation": "Chụp cận cụm trắng và toàn quả, chú ý vị trí quanh cuống.",
+      "lookalikes": "Lớp bám hoặc nấm bề mặt",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D09",
+      "crop_id": "durian",
+      "category": "pest",
+      "title": "Nhện đỏ",
+      "organs": "lá",
+      "signs": "Lá mất màu xanh bóng, có thể ngả màu đồng hoặc xám.",
+      "follow_up": "Lá non hay lá già đổi màu trước?",
+      "observation": "Chụp cả hai mặt lá. Nếu có kính lúp, quan sát và ghi lại chấm nhỏ di động.",
+      "lookalikes": "Rầy nhảy, bụi bám, thiếu nước",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D10",
+      "crop_id": "durian",
+      "category": "pest",
+      "title": "Xén tóc đục thân cành",
+      "organs": "thân;cành",
+      "signs": "Có lỗ trên thân hoặc cành, đôi khi thấy vật liệu vụn ở vùng bị hại.",
+      "follow_up": "Có lỗ đục hoặc mùn cạnh vết hư không?",
+      "observation": "Chụp lỗ và vùng xung quanh, ghi chiều cao vị trí trên thân.",
+      "lookalikes": "Xì mủ thân, tổn thương cơ học",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D11",
+      "crop_id": "durian",
+      "category": "pest",
+      "title": "Sâu đục hoa và quả",
+      "organs": "hoa;quả",
+      "signs": "Có thể thấy lỗ đục và phân sâu quanh vị trí bị hại trên quả.",
+      "follow_up": "Quả có lỗ rõ và vụn bám quanh lỗ hay chỉ có mảng đổi màu?",
+      "observation": "Chụp lỗ, toàn quả và vị trí các quả áp sát nhau.",
+      "lookalikes": "Thối quả, quả bị cọ xát",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D12",
+      "crop_id": "durian",
+      "category": "pest",
+      "title": "Rầy xanh hại lá non",
+      "organs": "lá non",
+      "signs": "Lá non bị chích hút có thể cháy và rụng. Cần kiểm tra mặt dưới lá.",
+      "follow_up": "Có côn trùng nhỏ ở mặt dưới các lá non đang bị cháy không?",
+      "observation": "Chụp hai mặt lá non, ưu tiên ảnh có côn trùng nếu thấy.",
+      "lookalikes": "Rầy nhảy, cháy lá chết ngọn",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D13",
+      "crop_id": "durian",
+      "category": "pest",
+      "title": "Mọt đục thân cành",
+      "organs": "gốc;thân;cành chính",
+      "signs": "Nên kiểm tra vùng thân hoặc cành chính phía dưới tán đang suy yếu.",
+      "follow_up": "Có nhiều lỗ nhỏ ở gốc hoặc cành chính không?",
+      "observation": "Chụp cận lỗ với vật làm mốc kích thước. Ghi có rỉ dịch quanh vết hay không.",
+      "lookalikes": "Xén tóc, xì mủ thân",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D14",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Lớp bồ hóng trên gai quả",
+      "organs": "quả",
+      "signs": "Lớp đen ngoài gai có thể xuất hiện cùng cụm rệp sáp.",
+      "follow_up": "Có thấy cụm trắng quanh cuống hoặc sát phần gai phủ đen không?",
+      "observation": "Chụp lớp đen và vùng quanh cuống. Ghi vỏ có lõm hoặc mềm không.",
+      "lookalikes": "Thối quả, vết bẩn bề mặt",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D15",
+      "crop_id": "durian",
+      "category": "abiotic",
+      "title": "Nghi thiếu nước kéo dài",
+      "organs": "lá;tán",
+      "signs": "Tán có thể héo lúc ban ngày, lá xỉn và mép lá vàng hoặc cháy.",
+      "follow_up": "Hiện tượng có rõ hơn giữa trưa sau nhiều ngày khô không?",
+      "observation": "Chụp tán buổi sáng và lúc héo. Ghi lịch tưới và xem đất quanh gốc có khô không.",
+      "lookalikes": "Thối rễ, tổn thương do mặn",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D16",
+      "crop_id": "durian",
+      "category": "abiotic",
+      "title": "Nghi ảnh hưởng nước mặn",
+      "organs": "lá;tán",
+      "signs": "Tán suy hoặc cháy lá sau đợt nước tưới nghi nhiễm mặn cần được kiểm tra cùng lịch tưới.",
+      "follow_up": "Có đổi nguồn nước hoặc có thông báo xâm nhập mặn gần thời điểm xuất hiện dấu hiệu không?",
+      "observation": "Ghi nguồn nước và ngày tưới. Nếu đã đo độ mặn, gửi kèm kết quả và ảnh tán.",
+      "lookalikes": "Thiếu nước, tổn thương rễ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D17",
+      "crop_id": "durian",
+      "category": "abiotic",
+      "title": "Sượng cơm",
+      "organs": "múi quả",
+      "signs": "Một phần thịt quả cứng hoặc chín không đều khi bổ.",
+      "follow_up": "Múi cứng đều hay chỉ cứng ở một vùng hoặc một số hộc?",
+      "observation": "Chụp mặt cắt vài múi của quả đã bổ. Ghi giống và thời điểm thu hoạch.",
+      "lookalikes": "Cháy múi, thu hoạch chưa đủ độ già",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D18",
+      "crop_id": "durian",
+      "category": "abiotic",
+      "title": "Cháy múi",
+      "organs": "múi quả",
+      "signs": "Phần thịt quả có vùng thâm nâu có thể chỉ thấy sau khi bổ.",
+      "follow_up": "Vùng nâu ở đầu múi hay lan vào nhiều hộc? Vỏ quả bên ngoài có vết thối không?",
+      "observation": "Chụp mặt cắt, vỏ quả và cuống. Ghi giống, ngày thu hoạch và số quả bị tương tự.",
+      "lookalikes": "Sượng cơm, thối quả",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D19",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Đốm lá nghi Phomopsis",
+      "organs": "lá",
+      "signs": "Có thể có nhiều đốm nhỏ trên lá, kèm vùng lá cháy khi nặng.",
+      "follow_up": "Có các đốm tròn riêng trước khi lá cháy lan không?",
+      "observation": "Chụp lá ở các mức nhẹ và nặng, gồm cả mép lá và mặt dưới.",
+      "lookalikes": "Thán thư, cháy lá chết ngọn",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D20",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Nấm hồng trên cành",
+      "organs": "cành;thân",
+      "signs": "Tài liệu Malaysia và Indonesia mô tả lớp sợi trắng ban đầu trên vỏ cành, sau có thể thành mảng hồng nhạt. Vỏ có thể nứt và cành khô.",
+      "follow_up": "Ở ranh giới đoạn cành xanh và đoạn khô, vỏ có lớp hồng nhạt bám rõ không?",
+      "observation": "Chụp cả cành, mặt trên và mặt dưới chỗ có lớp hồng; ghi có lỗ đục ở gần không.",
+      "lookalikes": "Xì mủ thân, cành bị mọt đục, tổn thương cơ học",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D21",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Thối quả rụng nghi Sclerotium",
+      "organs": "quả",
+      "signs": "Tài liệu Malaysia mô tả quả rụng chạm đất có thể xuất hiện vết nâu ướt trên vỏ, phủ tơ nấm dày tỏa như hình quạt.",
+      "follow_up": "Quả đã chạm đất và lớp tơ trắng có tỏa từ vết nâu ướt không?",
+      "observation": "Chụp toàn quả, vị trí chạm đất và mép vùng bị thối.",
+      "lookalikes": "Thối quả do Phytophthora, quả dập sau khi rụng",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D22",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Nấm rễ trắng nghi Rigidoporus",
+      "organs": "rễ;gốc;tán",
+      "signs": "Tài liệu Malaysia ghi nhận sợi nấm trắng phủ rễ, đôi lúc có thể thấy thể nấm ở gốc. Tán có thể vàng rồi khô và rụng lá.",
+      "follow_up": "Trên rễ đã lộ có dải sợi trắng bám dọc rễ hoặc thể nấm ở sát gốc không?",
+      "observation": "Chụp vùng gốc và rễ đã lộ, kèm ảnh toàn tán. Nhờ cán bộ kỹ thuật kiểm tra rễ.",
+      "lookalikes": "Thối rễ, úng nước, rệp sáp ở rễ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "D23",
+      "crop_id": "durian",
+      "category": "disease",
+      "title": "Thối rễ nghi Phytopythium",
+      "organs": "rễ;tán;lá",
+      "signs": "Báo cáo tại Việt Nam ghi nhận thối rễ và rụng lá. Tài liệu Malaysia minh họa cây bị vàng lá và héo; những dấu hiệu trên tán có thể trùng với các dạng thối rễ khác.",
+      "follow_up": "Cây vàng, héo hoặc rụng lá có đi kèm rễ đã lộ bị thối không?",
+      "observation": "Chụp tán, gốc và rễ đã lộ. Ghi tình trạng đọng nước, rồi nhờ cán bộ kỹ thuật kiểm tra mẫu rễ để phân biệt tác nhân.",
+      "lookalikes": "Thối rễ do Phytophthora, úng nước, nấm rễ trắng",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R01",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Đạo ôn lá",
+      "organs": "lá",
+      "signs": "Vết điển hình có thể kéo dài, nhọn hai đầu, tâm nhạt hơn viền.",
+      "follow_up": "Vết có hình thoi hay tròn đều?",
+      "observation": "Chụp sát một vết rõ và toàn lá. Ghi giai đoạn lúa.",
+      "lookalikes": "Đốm nâu, bạc lá",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R02",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Đạo ôn cổ bông",
+      "organs": "cổ bông;bông",
+      "signs": "Vùng cổ bông có thể sẫm màu, phần bông phía trên có thể bạc hoặc hạt lép.",
+      "follow_up": "Cổ bông có vết sẫm ngay dưới bông không?",
+      "observation": "Chụp sát cổ bông, toàn bông và phần thân bên dưới.",
+      "lookalikes": "Sâu đục thân, nguyên nhân gây lép khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R03",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Khô vằn",
+      "organs": "bẹ lá",
+      "signs": "Vết trên bẹ có thể có tâm nhạt và viền nâu, thường cần kiểm tra các bẹ thấp.",
+      "follow_up": "Vết có xuất hiện trước ở bẹ gần mặt nước không?",
+      "observation": "Chụp bẹ dưới và vết cao nhất trên cùng một dảnh, kèm ảnh toàn bụi.",
+      "lookalikes": "Tổn thương bẹ khác, bạc lá",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R04",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Bạc lá vi khuẩn",
+      "organs": "lá",
+      "signs": "Vệt đổi màu có thể bắt đầu ở chóp hoặc mép lá và lan dọc phiến lá.",
+      "follow_up": "Vệt lan từ chóp hoặc mép, hay có đốm riêng ở giữa lá?",
+      "observation": "Chụp cả lá và mép vùng đang đổi màu. Ghi số bụi có triệu chứng.",
+      "lookalikes": "Đạo ôn lá, cháy lá do điều kiện canh tác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R05",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Đốm nâu",
+      "organs": "lá;hạt",
+      "signs": "Vết thường tròn hoặc bầu dục, có thể có tâm sáng hơn.",
+      "follow_up": "Đốm chủ yếu tròn hay thuôn nhọn ở hai đầu?",
+      "observation": "Chụp toàn lá và cận vài vết cạnh nhau. Ghi giai đoạn lúa.",
+      "lookalikes": "Đạo ôn lá, các đốm lá khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R06",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Rầy nâu",
+      "organs": "gốc;thân",
+      "signs": "Có thể quan sát rầy ở phần thấp của bụi lúa. Ruộng bị hại nặng có thể xuất hiện mảng khô nâu.",
+      "follow_up": "Có côn trùng nhỏ ở sát gốc và mảng khô tập trung không?",
+      "observation": "Chụp sát gốc của bụi ở rìa mảng bị hại và ghi nhận vị trí trên ruộng.",
+      "lookalikes": "Khô hạn, ngộ độc hữu cơ, nhóm rầy khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R07",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Sâu cuốn lá",
+      "organs": "lá",
+      "signs": "Lá gập hoặc cuốn, đôi khi thấy vệt trắng trên phần bị ăn.",
+      "follow_up": "Lá cuốn có vệt trắng hoặc thấy sâu trong nếp gấp không?",
+      "observation": "Chụp lá cuốn và toàn bụi. Ghi số lá có dấu hiệu trên vài bụi.",
+      "lookalikes": "Lá cuộn do thiếu nước, sâu ăn lá khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R08",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Sâu đục thân",
+      "organs": "thân;dảnh;bông",
+      "signs": "Dảnh giữa có thể héo khi cây còn non, hoặc xuất hiện bông bạc khi lúa trổ.",
+      "follow_up": "Có dảnh héo riêng lẻ hay bông bạc, và thân có dấu đục không?",
+      "observation": "Chụp cả bụi, thân và cổ bông. Ghi lúa đang đẻ nhánh hay đã trổ.",
+      "lookalikes": "Đạo ôn cổ bông, nguyên nhân gây chết dảnh khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R09",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Vàng lùn",
+      "organs": "lá;toàn cây",
+      "signs": "Bụi thấp, lá nhỏ có thể ngả xanh vàng, sinh trưởng khác bụi bên cạnh.",
+      "follow_up": "Bụi bị vàng có thấp hơn rõ so với bụi bên cạnh không?",
+      "observation": "Chụp cạnh nhau một bụi bị hại và một bụi bình thường. Ghi vị trí và liên hệ khuyến nông nếu lan thành cụm.",
+      "lookalikes": "Lùn xoắn lá, thiếu dinh dưỡng, ngộ độc hữu cơ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R10",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Lùn xoắn lá",
+      "organs": "lá;toàn cây",
+      "signs": "Cây thấp, sinh trưởng chậm, lá có thể xoắn.",
+      "follow_up": "Lá xoắn có đi cùng cây thấp và sinh trưởng chậm không?",
+      "observation": "Chụp toàn bụi, lá bị xoắn và bụi liền kề. Gửi cán bộ chuyên môn nếu nhiều bụi có dấu hiệu.",
+      "lookalikes": "Vàng lùn, tổn thương lá khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R11",
+      "crop_id": "rice",
+      "category": "abiotic",
+      "title": "Nghi ngộ độc hữu cơ hoặc nghẹt rễ",
+      "organs": "rễ;toàn cây",
+      "signs": "Cây có thể vàng, chậm phát triển, rễ đổi màu ở ruộng có nhiều tàn dư hữu cơ.",
+      "follow_up": "Trước khi gieo cấy, ruộng có vùi nhiều rơm rạ hoặc ngập lâu không?",
+      "observation": "Chụp cả bụi và rễ của mẫu đã lấy, kèm ảnh mặt ruộng. Ghi lịch làm đất và tình trạng nước.",
+      "lookalikes": "Thiếu dinh dưỡng, bệnh rễ, vàng lùn",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R12",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Vàng giả hạt",
+      "organs": "bông;hạt",
+      "signs": "Một số hạt có thể biến thành khối màu vàng rồi sẫm hoặc ngả xanh.",
+      "follow_up": "Khối đổi màu thay thế riêng từng hạt hay cả bông đổi màu?",
+      "observation": "Chụp cận các hạt biến dạng và toàn bông.",
+      "lookalikes": "Lem lép hạt, hạt đổi màu bề mặt",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R13",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Lúa von",
+      "organs": "toàn cây;thân",
+      "signs": "Một số cây có thể cao vống, nhạt màu so với các cây cùng tuổi.",
+      "follow_up": "Cây bất thường cao hơn hẳn các cây bên cạnh không?",
+      "observation": "Chụp cạnh nhau cây cao bất thường và cây bình thường. Ghi giống và ngày gieo.",
+      "lookalikes": "Cây khác giống, chênh lệch sinh trưởng",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R14",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Đốm nâu hẹp",
+      "organs": "lá",
+      "signs": "Có thể thấy đốm nâu hẹp kéo dọc theo gân lá.",
+      "follow_up": "Vết là đường hẹp song song gân hay đốm tròn hoặc hình thoi?",
+      "observation": "Chụp lá dọc theo gân và lấy ảnh cận vài vết rõ.",
+      "lookalikes": "Đốm nâu, đạo ôn lá",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R15",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Thối bẹ lá đòng",
+      "organs": "bẹ lá;bông",
+      "signs": "Bẹ ôm đòng có thể bị thối và bông khó thoát ra.",
+      "follow_up": "Vết thối tập trung ở bẹ trên cùng quanh đòng hay ở bẹ dưới sát nước?",
+      "observation": "Chụp bẹ ôm đòng và bẹ thấp của cùng một dảnh.",
+      "lookalikes": "Khô vằn, bông trổ không thoát do nguyên nhân khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R16",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Đốm sọc vi khuẩn",
+      "organs": "lá",
+      "signs": "Có thể có vệt hẹp giữa các gân, lúc đầu nhìn hơi trong hoặc ướt.",
+      "follow_up": "Các vệt nằm giữa gân hay bắt đầu từ mép và chóp lá?",
+      "observation": "Chụp lá dưới ánh sáng tán xạ để thấy ranh giới giữa gân và vết.",
+      "lookalikes": "Bạc lá vi khuẩn, đốm nâu hẹp",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R17",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Ốc bươu vàng",
+      "organs": "mạ;gốc",
+      "signs": "Cây lúa non có thể bị cắn. Cần kiểm tra có ốc hoặc cụm trứng hồng gần mực nước không.",
+      "follow_up": "Có ốc hoặc ổ trứng hồng ở bờ và vùng mạ bị mất không?",
+      "observation": "Chụp vùng mạ bị hại, mực nước và ốc hoặc trứng nếu thấy.",
+      "lookalikes": "Mạ chết do ngập, côn trùng cắn gốc",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R18",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Bọ xít hôi hại lúa",
+      "organs": "bông;hạt",
+      "signs": "Bọ xít có thể thấy trên bông khi hạt đang phát triển. Hạt có thể lép hoặc đổi màu.",
+      "follow_up": "Lúa đang ngậm sữa và có thấy bọ xít thân dài trên bông không?",
+      "observation": "Chụp bông, côn trùng và ghi giai đoạn hạt ở vài điểm trên ruộng.",
+      "lookalikes": "Lem lép hạt, bọ xít đen ở gốc",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R19",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Bọ xít đen hại lúa",
+      "organs": "gốc;bẹ lá",
+      "signs": "Nên kiểm tra vùng gốc và bẹ thấp khi nghi có bọ xít đen.",
+      "follow_up": "Có côn trùng đen tụ ở sát gốc hoặc kẽ bẹ không?",
+      "observation": "Chụp cận côn trùng và vị trí của chúng trên bụi, kèm ảnh toàn ruộng.",
+      "lookalikes": "Rầy nâu, côn trùng khác ở gốc",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R20",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Sâu phao",
+      "organs": "lá;mặt nước",
+      "signs": "Có thể thấy mảnh lá cuộn thành ống và dấu ăn trên phiến lá.",
+      "follow_up": "Có ống bằng lá nổi gần chỗ các lá non bị ăn không?",
+      "observation": "Chụp mặt nước sát bụi lúa và phần phiến lá bị hại.",
+      "lookalikes": "Sâu cuốn lá, sâu ăn lá khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R21",
+      "crop_id": "rice",
+      "category": "abiotic",
+      "title": "Nghi thiếu kẽm",
+      "organs": "lá;toàn cây",
+      "signs": "Lúa có thể còi từng mảng và lá xuất hiện đốm nâu nhỏ.",
+      "follow_up": "Dấu hiệu xuất hiện bao lâu sau cấy hoặc sạ? Có thành từng mảng không?",
+      "observation": "Chụp lá bị đốm, toàn bụi và vị trí các mảng. Ghi lịch nước.",
+      "lookalikes": "Ngộ độc sắt, vàng lùn, các dạng thiếu dinh dưỡng khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R22",
+      "crop_id": "rice",
+      "category": "abiotic",
+      "title": "Nghi ngộ độc sắt",
+      "organs": "lá già;toàn cây",
+      "signs": "Lá thấp có thể xuất hiện đốm nâu nhỏ rồi chuyển màu đồng.",
+      "follow_up": "Đốm xuất hiện ở lá già hoặc các bụi ở chỗ trũng trước không?",
+      "observation": "Chụp lá già, lá non và khu vực ruộng. Ghi thời gian ngập và kết quả đo nếu có.",
+      "lookalikes": "Thiếu kẽm, đốm nâu, ngộ độc hữu cơ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R23",
+      "crop_id": "rice",
+      "category": "abiotic",
+      "title": "Nghi tổn thương do mặn",
+      "organs": "lá;toàn cây",
+      "signs": "Chóp lá có thể trắng hoặc khô, đi cùng cây sinh trưởng kém khi có phơi nhiễm mặn.",
+      "follow_up": "Có đổi nguồn nước hoặc dấu hiệu xuất hiện sau đợt nước mặn vào ruộng không?",
+      "observation": "Chụp chóp lá và bản đồ vị trí ruộng. Ghi độ mặn nước nếu đã đo.",
+      "lookalikes": "Thiếu dinh dưỡng, cháy lá do điều kiện khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R24",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Lem lép hạt",
+      "organs": "hạt;bông",
+      "signs": "Vỏ hạt có thể bị lem sẫm màu và một số hạt bị teo hoặc lép. Dấu hiệu có thể do nhiều nguyên nhân.",
+      "follow_up": "Hạt bị lem trên vỏ hay chỉ lép? Có thấy thâm ở cổ bông hoặc vết trên bẹ lá cờ không?",
+      "observation": "Chụp toàn bông và một số hạt, thêm ảnh cổ bông và bẹ lá cờ. Ghi giai đoạn lúa và thời điểm bắt đầu thấy dấu hiệu.",
+      "lookalikes": "Nhện gié, đạo ôn cổ bông, vàng giả hạt",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R25",
+      "crop_id": "rice",
+      "category": "pest",
+      "title": "Nghi nhện gié",
+      "organs": "bẹ lá;bông;hạt",
+      "signs": "Có thể thấy vết đổi màu tím trên bẹ, kèm hạt lửng hoặc lép. Nhện rất nhỏ và khó thấy bằng mắt thường.",
+      "follow_up": "Bẹ lá cờ có vết đổi màu tím hay chỉ có hạt lem lép?",
+      "observation": "Chụp bẹ lá cờ và toàn bông. Nếu dấu hiệu xuất hiện trên nhiều bụi, gửi mẫu qua cán bộ chuyên môn để kiểm tra.",
+      "lookalikes": "Lem lép hạt, thối bẹ lá đòng",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R26",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Cháy lá có vân sọc (leaf scald)",
+      "organs": "lá",
+      "signs": "Vết có thể bắt đầu ở chóp hoặc mép lá trưởng thành, với các dải nâu đậm và nhạt xen nhau. Khi các vết lan nhập, phần lá lớn có thể khô cháy.",
+      "follow_up": "Vết bắt đầu ở đầu hoặc mép lá và có các dải màu nâu xen nhau không?",
+      "observation": "Chụp trọn lá và vùng chuyển từ xanh sang cháy; chụp thêm lá lân cận.",
+      "lookalikes": "Bạc lá vi khuẩn, đạo ôn lá, cháy chóp do điều kiện canh tác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R27",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Thối thân lúa",
+      "organs": "bẹ lá;thân;gốc",
+      "signs": "Trong lúa gieo trên ruộng có nước, vết đen nhỏ có thể xuất hiện ở bẹ lá ngang mực nước. Về sau bẹ có thể chết và vết lan vào thân.",
+      "follow_up": "Vết đen bắt đầu ở bẹ thấp sát mực nước hay ở bẹ trên cùng quanh đòng?",
+      "observation": "Chụp bẹ sát mực nước và toàn dảnh lúa để thấy vị trí vết.",
+      "lookalikes": "Khô vằn, đốm vòng bẹ lá, thối bẹ lá đòng",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R28",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Đốm vòng trên bẹ lá lúa",
+      "organs": "bẹ lá;thân",
+      "signs": "Tài liệu UC IPM mô tả vết tròn hoặc bầu dục trên bẹ thấp, tâm xám xanh hoặc vàng rơm, viền nâu rõ. Một số vết có nhiều vòng đồng tâm.",
+      "follow_up": "Vết nằm trên bẹ thấp và có viền nâu thành vòng quanh tâm nhạt không?",
+      "observation": "Chụp sát viền vết, đồng thời chụp toàn dảnh để ghi vết đã lan lên cao đến đâu.",
+      "lookalikes": "Khô vằn, thối thân lúa",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R29",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Than đen hạt lúa",
+      "organs": "bông;hạt",
+      "signs": "Gần lúc chín, một vài hạt trên bông có thể phồng nhẹ hoặc nứt vỏ, lộ lớp bào tử đen thay một phần hoặc toàn bộ ruột hạt.",
+      "follow_up": "Màu đen lộ từ trong hạt nứt hay chỉ là vết lem ngoài vỏ?",
+      "observation": "Chụp cận hạt có vết nứt và toàn bông; ghi lúa đã gần thu hoạch chưa.",
+      "lookalikes": "Vàng giả hạt, lem lép hạt",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R30",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Thối hạt giống và mạ do nấm nước",
+      "organs": "hạt;mạ;gốc;rễ",
+      "signs": "Tài liệu UC IPM mô tả sợi trắng quanh vết nứt trên hạt hoặc gốc mạ mới mọc. Mạ sống sót có thể chậm lớn và vàng lá.",
+      "follow_up": "Mạ mới mọc có sợi trắng quanh hạt hoặc gốc và có mọc thưa thành vùng không?",
+      "observation": "Chụp hạt và gốc mạ, thêm ảnh vùng mạ mọc thưa. Ghi số ngày sau gieo.",
+      "lookalikes": "Lúa von, ngộ độc hữu cơ, hạt không nảy mầm vì nguyên nhân khác",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R31",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Nghi bệnh Tungro",
+      "organs": "lá;toàn cây",
+      "signs": "Tài liệu IRRI mô tả cây thấp và đẻ ít nhánh; lá có thể vàng đến vàng cam, đôi khi có đốm màu gỉ.",
+      "follow_up": "Bụi có lá vàng cam đồng thời thấp và ít nhánh rõ hơn bụi khỏe bên cạnh không?",
+      "observation": "Chụp cạnh nhau bụi bệnh và bụi khỏe, thêm ảnh phần lá vàng. Nhờ cán bộ kỹ thuật đánh giá nếu chỉ có dấu hiệu vàng và lùn.",
+      "lookalikes": "Vàng lùn, thiếu dinh dưỡng, ngộ độc hữu cơ",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R32",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Nghi tuyến trùng thân lúa (Ufra)",
+      "organs": "lá;bông;bẹ lá;thân",
+      "signs": "Tài liệu IRRI ghi nhận mô lá nhạt màu lúc đầu; cây có thể thấp, lá xoắn và bông trổ kẹt trong bẹ. Bông trổ ra có thể méo xoắn và hạt lép.",
+      "follow_up": "Ngoài lá bị xoắn, bông có trổ kẹt trong bẹ hoặc méo xoắn rõ không?",
+      "observation": "Chụp bẹ ôm bông, bông biến dạng và cả bụi; nhờ cán bộ kỹ thuật kiểm tra mẫu khi dấu hiệu trùng lùn xoắn lá.",
+      "lookalikes": "Lùn xoắn lá, thối bẹ lá đòng, nhện gié",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    },
+    {
+      "id": "R33",
+      "crop_id": "rice",
+      "category": "disease",
+      "title": "Trắng chóp lá nghi tuyến trùng",
+      "organs": "lá;lá đòng;bông",
+      "signs": "Theo IRRI, đầu lá có thể mất màu rồi khô rách. Lá đòng đôi khi xoắn và bông trổ kém hoặc có nhiều hạt lép.",
+      "follow_up": "Chóp lá trắng có khô rách và đi kèm lá đòng bị xoắn không?",
+      "observation": "Chụp cận chóp lá, toàn lá đòng và bông nếu đã trổ; ghi giai đoạn sinh trưởng.",
+      "lookalikes": "Tổn thương do mặn, cháy lá, lùn xoắn lá",
+      "review_status": "approved",
+      "reviewed_by": "Chủ dự án AgriDoctor AI",
+      "reviewed_on": "2026-11-18",
+      "approval_scope": "project"
+    }
+  ],
+  "aliases": [
+    {
+      "case_id": "C01",
+      "phrase": "gỉ sắt",
+      "normalized": "gi sat"
+    },
+    {
+      "case_id": "C01",
+      "phrase": "Gỉ sắt lá",
+      "normalized": "gi sat la"
+    },
+    {
+      "case_id": "C01",
+      "phrase": "phấn cam mặt dưới",
+      "normalized": "phan cam mat duoi"
+    },
+    {
+      "case_id": "C01",
+      "phrase": "rỉ sắt",
+      "normalized": "ri sat"
+    },
+    {
+      "case_id": "C02",
+      "phrase": "cành khô",
+      "normalized": "canh kho"
+    },
+    {
+      "case_id": "C02",
+      "phrase": "mảng hồng trên cành",
+      "normalized": "mang hong tren canh"
+    },
+    {
+      "case_id": "C02",
+      "phrase": "Nấm hồng",
+      "normalized": "nam hong"
+    },
+    {
+      "case_id": "C03",
+      "phrase": "thối rễ",
+      "normalized": "thoi re"
+    },
+    {
+      "case_id": "C03",
+      "phrase": "vàng cả tán",
+      "normalized": "vang ca tan"
+    },
+    {
+      "case_id": "C03",
+      "phrase": "Vàng lá thối rễ",
+      "normalized": "vang la thoi re"
+    },
+    {
+      "case_id": "C04",
+      "phrase": "Đốm mắt cua",
+      "normalized": "dom mat cua"
+    },
+    {
+      "case_id": "C04",
+      "phrase": "đốm tâm xám",
+      "normalized": "dom tam xam"
+    },
+    {
+      "case_id": "C04",
+      "phrase": "đốm viền nâu",
+      "normalized": "dom vien nau"
+    },
+    {
+      "case_id": "C05",
+      "phrase": "rệp sáp",
+      "normalized": "rep sap"
+    },
+    {
+      "case_id": "C05",
+      "phrase": "Rệp sáp chùm quả",
+      "normalized": "rep sap chum qua"
+    },
+    {
+      "case_id": "C05",
+      "phrase": "sáp trắng ở cuống",
+      "normalized": "sap trang o cuong"
+    },
+    {
+      "case_id": "C05",
+      "phrase": "trắng ở chùm quả",
+      "normalized": "trang o chum qua"
+    },
+    {
+      "case_id": "C06",
+      "phrase": "rệp sáp gốc",
+      "normalized": "rep sap goc"
+    },
+    {
+      "case_id": "C06",
+      "phrase": "rệp sáp rễ",
+      "normalized": "rep sap re"
+    },
+    {
+      "case_id": "C06",
+      "phrase": "Rệp sáp vùng rễ",
+      "normalized": "rep sap vung re"
+    },
+    {
+      "case_id": "C06",
+      "phrase": "trắng quanh cổ rễ",
+      "normalized": "trang quanh co re"
+    },
+    {
+      "case_id": "C07",
+      "phrase": "cành héo",
+      "normalized": "canh heo"
+    },
+    {
+      "case_id": "C07",
+      "phrase": "lỗ nhỏ trên cành",
+      "normalized": "lo nho tren canh"
+    },
+    {
+      "case_id": "C07",
+      "phrase": "Mọt đục cành",
+      "normalized": "mot duc canh"
+    },
+    {
+      "case_id": "C08",
+      "phrase": "lỗ đầu quả",
+      "normalized": "lo dau qua"
+    },
+    {
+      "case_id": "C08",
+      "phrase": "lỗ ở núm quả",
+      "normalized": "lo o num qua"
+    },
+    {
+      "case_id": "C08",
+      "phrase": "Mọt đục quả",
+      "normalized": "mot duc qua"
+    },
+    {
+      "case_id": "C09",
+      "phrase": "khô cành khô quả",
+      "normalized": "kho canh kho qua"
+    },
+    {
+      "case_id": "C09",
+      "phrase": "Khô cành khô quả nghi thán thư",
+      "normalized": "kho canh kho qua nghi than thu"
+    },
+    {
+      "case_id": "C09",
+      "phrase": "quả đen khô",
+      "normalized": "qua den kho"
+    },
+    {
+      "case_id": "C09",
+      "phrase": "thán thư cà phê",
+      "normalized": "than thu ca phe"
+    },
+    {
+      "case_id": "C09",
+      "phrase": "vết lõm nâu trên cành",
+      "normalized": "vet lom nau tren canh"
+    },
+    {
+      "case_id": "C10",
+      "phrase": "nổ vỏ",
+      "normalized": "no vo"
+    },
+    {
+      "case_id": "C10",
+      "phrase": "nứt thân",
+      "normalized": "nut than"
+    },
+    {
+      "case_id": "C10",
+      "phrase": "Thối nứt thân",
+      "normalized": "thoi nut than"
+    },
+    {
+      "case_id": "C10",
+      "phrase": "thối vỏ thân",
+      "normalized": "thoi vo than"
+    },
+    {
+      "case_id": "C10",
+      "phrase": "vỏ thân có mùi",
+      "normalized": "vo than co mui"
+    },
+    {
+      "case_id": "C11",
+      "phrase": "đầu rễ tù",
+      "normalized": "dau re tu"
+    },
+    {
+      "case_id": "C11",
+      "phrase": "Nghi tuyến trùng hại rễ",
+      "normalized": "nghi tuyen trung hai re"
+    },
+    {
+      "case_id": "C11",
+      "phrase": "rễ có nốt sần",
+      "normalized": "re co not san"
+    },
+    {
+      "case_id": "C11",
+      "phrase": "rễ u sưng",
+      "normalized": "re u sung"
+    },
+    {
+      "case_id": "C11",
+      "phrase": "tuyến trùng",
+      "normalized": "tuyen trung"
+    },
+    {
+      "case_id": "C12",
+      "phrase": "ấu trùng ve sầu",
+      "normalized": "au trung ve sau"
+    },
+    {
+      "case_id": "C12",
+      "phrase": "Nghi ấu trùng ve sầu hại rễ",
+      "normalized": "nghi au trung ve sau hai re"
+    },
+    {
+      "case_id": "C12",
+      "phrase": "ve sầu cà phê",
+      "normalized": "ve sau ca phe"
+    },
+    {
+      "case_id": "C12",
+      "phrase": "ve sầu hại rễ",
+      "normalized": "ve sau hai re"
+    },
+    {
+      "case_id": "C13",
+      "phrase": "bọ xít muỗi",
+      "normalized": "bo xit muoi"
+    },
+    {
+      "case_id": "C13",
+      "phrase": "Bọ xít muỗi trên cà phê chè",
+      "normalized": "bo xit muoi tren ca phe che"
+    },
+    {
+      "case_id": "C13",
+      "phrase": "chấm đen trên đọt",
+      "normalized": "cham den tren dot"
+    },
+    {
+      "case_id": "C13",
+      "phrase": "vết chích trên đọt",
+      "normalized": "vet chich tren dot"
+    },
+    {
+      "case_id": "C14",
+      "phrase": "cà phê thiếu nước",
+      "normalized": "ca phe thieu nuoc"
+    },
+    {
+      "case_id": "C14",
+      "phrase": "héo sau đợt khô",
+      "normalized": "heo sau dot kho"
+    },
+    {
+      "case_id": "C14",
+      "phrase": "lá héo mùa khô",
+      "normalized": "la heo mua kho"
+    },
+    {
+      "case_id": "C14",
+      "phrase": "Nghi thiếu nước",
+      "normalized": "nghi thieu nuoc"
+    },
+    {
+      "case_id": "C15",
+      "phrase": "cà phê bị úng",
+      "normalized": "ca phe bi ung"
+    },
+    {
+      "case_id": "C15",
+      "phrase": "Nghi úng vùng rễ",
+      "normalized": "nghi ung vung re"
+    },
+    {
+      "case_id": "C15",
+      "phrase": "nước đọng gốc",
+      "normalized": "nuoc dong goc"
+    },
+    {
+      "case_id": "C15",
+      "phrase": "vàng sau ngập",
+      "normalized": "vang sau ngap"
+    },
+    {
+      "case_id": "C16",
+      "phrase": "cây giống nhạt màu",
+      "normalized": "cay giong nhat mau"
+    },
+    {
+      "case_id": "C16",
+      "phrase": "lá già vàng đều",
+      "normalized": "la gia vang deu"
+    },
+    {
+      "case_id": "C16",
+      "phrase": "Nghi thiếu đạm ở cây giống",
+      "normalized": "nghi thieu dam o cay giong"
+    },
+    {
+      "case_id": "C16",
+      "phrase": "thiếu đạm",
+      "normalized": "thieu dam"
+    },
+    {
+      "case_id": "C17",
+      "phrase": "lá già vàng giữa gân",
+      "normalized": "la gia vang giua gan"
+    },
+    {
+      "case_id": "C17",
+      "phrase": "Nghi thiếu magiê ở cây giống",
+      "normalized": "nghi thieu magie o cay giong"
+    },
+    {
+      "case_id": "C17",
+      "phrase": "thiếu magie",
+      "normalized": "thieu magie"
+    },
+    {
+      "case_id": "C18",
+      "phrase": "cháy viền lá cây giống",
+      "normalized": "chay vien la cay giong"
+    },
+    {
+      "case_id": "C18",
+      "phrase": "lá già cháy mép",
+      "normalized": "la gia chay mep"
+    },
+    {
+      "case_id": "C18",
+      "phrase": "Nghi thiếu kali ở cây giống",
+      "normalized": "nghi thieu kali o cay giong"
+    },
+    {
+      "case_id": "C18",
+      "phrase": "thiếu kali",
+      "normalized": "thieu kali"
+    },
+    {
+      "case_id": "C19",
+      "phrase": "cổ rễ bị teo",
+      "normalized": "co re bi teo"
+    },
+    {
+      "case_id": "C19",
+      "phrase": "cổ rễ thối đen",
+      "normalized": "co re thoi den"
+    },
+    {
+      "case_id": "C19",
+      "phrase": "lở cổ rễ",
+      "normalized": "lo co re"
+    },
+    {
+      "case_id": "C19",
+      "phrase": "Lở cổ rễ cây con",
+      "normalized": "lo co re cay con"
+    },
+    {
+      "case_id": "C19",
+      "phrase": "thắt cổ rễ",
+      "normalized": "that co re"
+    },
+    {
+      "case_id": "C20",
+      "phrase": "corynespora",
+      "normalized": "corynespora"
+    },
+    {
+      "case_id": "C20",
+      "phrase": "đốm lá corynespora",
+      "normalized": "dom la corynespora"
+    },
+    {
+      "case_id": "C20",
+      "phrase": "đốm lá mục tiêu",
+      "normalized": "dom la muc tieu"
+    },
+    {
+      "case_id": "C20",
+      "phrase": "Đốm lá nghi Corynespora",
+      "normalized": "dom la nghi corynespora"
+    },
+    {
+      "case_id": "C21",
+      "phrase": "Cháy lá dạng mạng tơ",
+      "normalized": "chay la dang mang to"
+    },
+    {
+      "case_id": "C21",
+      "phrase": "cháy lá mạng nhện",
+      "normalized": "chay la mang nhen"
+    },
+    {
+      "case_id": "C21",
+      "phrase": "lá khô treo bằng sợi trắng",
+      "normalized": "la kho treo bang soi trang"
+    },
+    {
+      "case_id": "C21",
+      "phrase": "thread blight",
+      "normalized": "thread blight"
+    },
+    {
+      "case_id": "C22",
+      "phrase": "Đốm lá nghi Phoma",
+      "normalized": "dom la nghi phoma"
+    },
+    {
+      "case_id": "C22",
+      "phrase": "đốm lá phoma",
+      "normalized": "dom la phoma"
+    },
+    {
+      "case_id": "C22",
+      "phrase": "mép lá sẫm có chấm đen",
+      "normalized": "mep la sam co cham den"
+    },
+    {
+      "case_id": "C22",
+      "phrase": "phoma cà phê",
+      "normalized": "phoma ca phe"
+    },
+    {
+      "case_id": "C23",
+      "phrase": "đốm lá cây giống có cụm chấm đen",
+      "normalized": "dom la cay giong co cum cham den"
+    },
+    {
+      "case_id": "C23",
+      "phrase": "Đốm lá cây giống nghi Myrothecium",
+      "normalized": "dom la cay giong nghi myrothecium"
+    },
+    {
+      "case_id": "C23",
+      "phrase": "đốm lá myrothecium",
+      "normalized": "dom la myrothecium"
+    },
+    {
+      "case_id": "C23",
+      "phrase": "myrothecium",
+      "normalized": "myrothecium"
+    },
+    {
+      "case_id": "C24",
+      "phrase": "rosellinia cà phê",
+      "normalized": "rosellinia ca phe"
+    },
+    {
+      "case_id": "C24",
+      "phrase": "thối đen rễ",
+      "normalized": "thoi den re"
+    },
+    {
+      "case_id": "C24",
+      "phrase": "Thối đen rễ nghi Rosellinia",
+      "normalized": "thoi den re nghi rosellinia"
+    },
+    {
+      "case_id": "C24",
+      "phrase": "thối rễ rosellinia",
+      "normalized": "thoi re rosellinia"
+    },
+    {
+      "case_id": "D01",
+      "phrase": "cháy mép lá",
+      "normalized": "chay mep la"
+    },
+    {
+      "case_id": "D01",
+      "phrase": "đốm cháy từ mép lá",
+      "normalized": "dom chay tu mep la"
+    },
+    {
+      "case_id": "D01",
+      "phrase": "đốm nâu",
+      "normalized": "dom nau"
+    },
+    {
+      "case_id": "D01",
+      "phrase": "thán thư",
+      "normalized": "than thu"
+    },
+    {
+      "case_id": "D01",
+      "phrase": "Thán thư lá",
+      "normalized": "than thu la"
+    },
+    {
+      "case_id": "D02",
+      "phrase": "chảy mủ thân",
+      "normalized": "chay mu than"
+    },
+    {
+      "case_id": "D02",
+      "phrase": "chảy nhựa",
+      "normalized": "chay nhua"
+    },
+    {
+      "case_id": "D02",
+      "phrase": "nứt thân",
+      "normalized": "nut than"
+    },
+    {
+      "case_id": "D02",
+      "phrase": "xì mủ",
+      "normalized": "xi mu"
+    },
+    {
+      "case_id": "D02",
+      "phrase": "xì mủ gốc",
+      "normalized": "xi mu goc"
+    },
+    {
+      "case_id": "D02",
+      "phrase": "Xì mủ thân",
+      "normalized": "xi mu than"
+    },
+    {
+      "case_id": "D03",
+      "phrase": "cháy lá",
+      "normalized": "chay la"
+    },
+    {
+      "case_id": "D03",
+      "phrase": "Cháy lá chết ngọn",
+      "normalized": "chay la chet ngon"
+    },
+    {
+      "case_id": "D03",
+      "phrase": "chết ngọn",
+      "normalized": "chet ngon"
+    },
+    {
+      "case_id": "D03",
+      "phrase": "khô đọt",
+      "normalized": "kho dot"
+    },
+    {
+      "case_id": "D04",
+      "phrase": "đốm cam",
+      "normalized": "dom cam"
+    },
+    {
+      "case_id": "D04",
+      "phrase": "đốm màu gạch",
+      "normalized": "dom mau gach"
+    },
+    {
+      "case_id": "D04",
+      "phrase": "Đốm rong",
+      "normalized": "dom rong"
+    },
+    {
+      "case_id": "D05",
+      "phrase": "mảng nâu trên vỏ",
+      "normalized": "mang nau tren vo"
+    },
+    {
+      "case_id": "D05",
+      "phrase": "Thối quả",
+      "normalized": "thoi qua"
+    },
+    {
+      "case_id": "D05",
+      "phrase": "thối trái",
+      "normalized": "thoi trai"
+    },
+    {
+      "case_id": "D06",
+      "phrase": "héo cả cây",
+      "normalized": "heo ca cay"
+    },
+    {
+      "case_id": "D06",
+      "phrase": "Thối rễ",
+      "normalized": "thoi re"
+    },
+    {
+      "case_id": "D06",
+      "phrase": "vàng tán",
+      "normalized": "vang tan"
+    },
+    {
+      "case_id": "D07",
+      "phrase": "đọt non quăn",
+      "normalized": "dot non quan"
+    },
+    {
+      "case_id": "D07",
+      "phrase": "lá non biến dạng",
+      "normalized": "la non bien dang"
+    },
+    {
+      "case_id": "D07",
+      "phrase": "Rầy nhảy",
+      "normalized": "ray nhay"
+    },
+    {
+      "case_id": "D08",
+      "phrase": "lớp sáp trắng",
+      "normalized": "lop sap trang"
+    },
+    {
+      "case_id": "D08",
+      "phrase": "rệp sáp",
+      "normalized": "rep sap"
+    },
+    {
+      "case_id": "D08",
+      "phrase": "Rệp sáp hại quả",
+      "normalized": "rep sap hai qua"
+    },
+    {
+      "case_id": "D08",
+      "phrase": "trắng ở cuống trái",
+      "normalized": "trang o cuong trai"
+    },
+    {
+      "case_id": "D09",
+      "phrase": "lá mất bóng",
+      "normalized": "la mat bong"
+    },
+    {
+      "case_id": "D09",
+      "phrase": "lá xỉn màu",
+      "normalized": "la xin mau"
+    },
+    {
+      "case_id": "D09",
+      "phrase": "Nhện đỏ",
+      "normalized": "nhen do"
+    },
+    {
+      "case_id": "D10",
+      "phrase": "lỗ đục thân",
+      "normalized": "lo duc than"
+    },
+    {
+      "case_id": "D10",
+      "phrase": "mùn quanh thân",
+      "normalized": "mun quanh than"
+    },
+    {
+      "case_id": "D10",
+      "phrase": "xén tóc",
+      "normalized": "xen toc"
+    },
+    {
+      "case_id": "D10",
+      "phrase": "Xén tóc đục thân cành",
+      "normalized": "xen toc duc than canh"
+    },
+    {
+      "case_id": "D11",
+      "phrase": "lỗ đục trên trái",
+      "normalized": "lo duc tren trai"
+    },
+    {
+      "case_id": "D11",
+      "phrase": "phân sâu trên trái",
+      "normalized": "phan sau tren trai"
+    },
+    {
+      "case_id": "D11",
+      "phrase": "Sâu đục hoa và quả",
+      "normalized": "sau duc hoa va qua"
+    },
+    {
+      "case_id": "D11",
+      "phrase": "sâu đục quả",
+      "normalized": "sau duc qua"
+    },
+    {
+      "case_id": "D11",
+      "phrase": "sâu đục trái",
+      "normalized": "sau duc trai"
+    },
+    {
+      "case_id": "D12",
+      "phrase": "con xanh dưới lá",
+      "normalized": "con xanh duoi la"
+    },
+    {
+      "case_id": "D12",
+      "phrase": "lá non cháy rồi rụng",
+      "normalized": "la non chay roi rung"
+    },
+    {
+      "case_id": "D12",
+      "phrase": "rầy xanh",
+      "normalized": "ray xanh"
+    },
+    {
+      "case_id": "D12",
+      "phrase": "Rầy xanh hại lá non",
+      "normalized": "ray xanh hai la non"
+    },
+    {
+      "case_id": "D13",
+      "phrase": "mọt đục cành",
+      "normalized": "mot duc canh"
+    },
+    {
+      "case_id": "D13",
+      "phrase": "mọt đục thân",
+      "normalized": "mot duc than"
+    },
+    {
+      "case_id": "D13",
+      "phrase": "Mọt đục thân cành",
+      "normalized": "mot duc than canh"
+    },
+    {
+      "case_id": "D13",
+      "phrase": "nhiều lỗ kim trên thân",
+      "normalized": "nhieu lo kim tren than"
+    },
+    {
+      "case_id": "D14",
+      "phrase": "bồ hóng",
+      "normalized": "bo hong"
+    },
+    {
+      "case_id": "D14",
+      "phrase": "gai trái phủ đen",
+      "normalized": "gai trai phu den"
+    },
+    {
+      "case_id": "D14",
+      "phrase": "Lớp bồ hóng trên gai quả",
+      "normalized": "lop bo hong tren gai qua"
+    },
+    {
+      "case_id": "D14",
+      "phrase": "lớp đen trên gai",
+      "normalized": "lop den tren gai"
+    },
+    {
+      "case_id": "D15",
+      "phrase": "cháy viền lá mùa khô",
+      "normalized": "chay vien la mua kho"
+    },
+    {
+      "case_id": "D15",
+      "phrase": "héo lá ban ngày",
+      "normalized": "heo la ban ngay"
+    },
+    {
+      "case_id": "D15",
+      "phrase": "khô hạn",
+      "normalized": "kho han"
+    },
+    {
+      "case_id": "D15",
+      "phrase": "Nghi thiếu nước kéo dài",
+      "normalized": "nghi thieu nuoc keo dai"
+    },
+    {
+      "case_id": "D16",
+      "phrase": "cháy lá sau tưới",
+      "normalized": "chay la sau tuoi"
+    },
+    {
+      "case_id": "D16",
+      "phrase": "Nghi ảnh hưởng nước mặn",
+      "normalized": "nghi anh huong nuoc man"
+    },
+    {
+      "case_id": "D16",
+      "phrase": "nước tưới mặn",
+      "normalized": "nuoc tuoi man"
+    },
+    {
+      "case_id": "D16",
+      "phrase": "xâm nhập mặn",
+      "normalized": "xam nhap man"
+    },
+    {
+      "case_id": "D17",
+      "phrase": "cơm cứng",
+      "normalized": "com cung"
+    },
+    {
+      "case_id": "D17",
+      "phrase": "múi cứng",
+      "normalized": "mui cung"
+    },
+    {
+      "case_id": "D17",
+      "phrase": "Sượng cơm",
+      "normalized": "suong com"
+    },
+    {
+      "case_id": "D17",
+      "phrase": "trái sượng",
+      "normalized": "trai suong"
+    },
+    {
+      "case_id": "D18",
+      "phrase": "Cháy múi",
+      "normalized": "chay mui"
+    },
+    {
+      "case_id": "D18",
+      "phrase": "múi nâu",
+      "normalized": "mui nau"
+    },
+    {
+      "case_id": "D18",
+      "phrase": "thâm đầu múi",
+      "normalized": "tham dau mui"
+    },
+    {
+      "case_id": "D19",
+      "phrase": "cháy lá có đốm",
+      "normalized": "chay la co dom"
+    },
+    {
+      "case_id": "D19",
+      "phrase": "Đốm lá nghi Phomopsis",
+      "normalized": "dom la nghi phomopsis"
+    },
+    {
+      "case_id": "D19",
+      "phrase": "đốm nâu",
+      "normalized": "dom nau"
+    },
+    {
+      "case_id": "D19",
+      "phrase": "đốm phomopsis",
+      "normalized": "dom phomopsis"
+    },
+    {
+      "case_id": "D19",
+      "phrase": "đốm tròn nhỏ trên lá",
+      "normalized": "dom tron nho tren la"
+    },
+    {
+      "case_id": "D19",
+      "phrase": "đốm tròn rải rác",
+      "normalized": "dom tron rai rac"
+    },
+    {
+      "case_id": "D20",
+      "phrase": "lớp hồng trên vỏ cành",
+      "normalized": "lop hong tren vo canh"
+    },
+    {
+      "case_id": "D20",
+      "phrase": "mảng hồng trên cành sầu riêng",
+      "normalized": "mang hong tren canh sau rieng"
+    },
+    {
+      "case_id": "D20",
+      "phrase": "nấm hồng",
+      "normalized": "nam hong"
+    },
+    {
+      "case_id": "D20",
+      "phrase": "Nấm hồng trên cành",
+      "normalized": "nam hong tren canh"
+    },
+    {
+      "case_id": "D21",
+      "phrase": "quả rụng có tơ trắng hình quạt",
+      "normalized": "qua rung co to trang hinh quat"
+    },
+    {
+      "case_id": "D21",
+      "phrase": "sclerotium sầu riêng",
+      "normalized": "sclerotium sau rieng"
+    },
+    {
+      "case_id": "D21",
+      "phrase": "Thối quả rụng nghi Sclerotium",
+      "normalized": "thoi qua rung nghi sclerotium"
+    },
+    {
+      "case_id": "D21",
+      "phrase": "thối quả sclerotium",
+      "normalized": "thoi qua sclerotium"
+    },
+    {
+      "case_id": "D22",
+      "phrase": "nấm rễ trắng",
+      "normalized": "nam re trang"
+    },
+    {
+      "case_id": "D22",
+      "phrase": "Nấm rễ trắng nghi Rigidoporus",
+      "normalized": "nam re trang nghi rigidoporus"
+    },
+    {
+      "case_id": "D22",
+      "phrase": "rigidoporus sầu riêng",
+      "normalized": "rigidoporus sau rieng"
+    },
+    {
+      "case_id": "D22",
+      "phrase": "sợi nấm trắng phủ rễ",
+      "normalized": "soi nam trang phu re"
+    },
+    {
+      "case_id": "D23",
+      "phrase": "phytopythium vexans",
+      "normalized": "phytopythium vexans"
+    },
+    {
+      "case_id": "D23",
+      "phrase": "Thối rễ nghi Phytopythium",
+      "normalized": "thoi re nghi phytopythium"
+    },
+    {
+      "case_id": "D23",
+      "phrase": "thối rễ phytopythium",
+      "normalized": "thoi re phytopythium"
+    },
+    {
+      "case_id": "D23",
+      "phrase": "thối rễ pythium",
+      "normalized": "thoi re pythium"
+    },
+    {
+      "case_id": "R01",
+      "phrase": "cháy bìa lá",
+      "normalized": "chay bia la"
+    },
+    {
+      "case_id": "R01",
+      "phrase": "cháy lá",
+      "normalized": "chay la"
+    },
+    {
+      "case_id": "R01",
+      "phrase": "cháy mép lá",
+      "normalized": "chay mep la"
+    },
+    {
+      "case_id": "R01",
+      "phrase": "Đạo ôn lá",
+      "normalized": "dao on la"
+    },
+    {
+      "case_id": "R01",
+      "phrase": "đốm hình thoi",
+      "normalized": "dom hinh thoi"
+    },
+    {
+      "case_id": "R01",
+      "phrase": "vết hình thoi",
+      "normalized": "vet hinh thoi"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "bông bạc",
+      "normalized": "bong bac"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "cổ bông bị đen",
+      "normalized": "co bong bi den"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "cổ gié bị đen",
+      "normalized": "co gie bi den"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "cổ gié thâm",
+      "normalized": "co gie tham"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "Đạo ôn cổ bông",
+      "normalized": "dao on co bong"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "đạo ôn cổ gié",
+      "normalized": "dao on co gie"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "đen cổ bông",
+      "normalized": "den co bong"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "đen cổ gié",
+      "normalized": "den co gie"
+    },
+    {
+      "case_id": "R02",
+      "phrase": "thâm cổ bông",
+      "normalized": "tham co bong"
+    },
+    {
+      "case_id": "R03",
+      "phrase": "bẹ có vết xám",
+      "normalized": "be co vet xam"
+    },
+    {
+      "case_id": "R03",
+      "phrase": "đốm vằn",
+      "normalized": "dom van"
+    },
+    {
+      "case_id": "R03",
+      "phrase": "đốm vằn trên bẹ",
+      "normalized": "dom van tren be"
+    },
+    {
+      "case_id": "R03",
+      "phrase": "Khô vằn",
+      "normalized": "kho van"
+    },
+    {
+      "case_id": "R03",
+      "phrase": "vết loang ở bẹ",
+      "normalized": "vet loang o be"
+    },
+    {
+      "case_id": "R04",
+      "phrase": "bạc lá",
+      "normalized": "bac la"
+    },
+    {
+      "case_id": "R04",
+      "phrase": "Bạc lá vi khuẩn",
+      "normalized": "bac la vi khuan"
+    },
+    {
+      "case_id": "R04",
+      "phrase": "cháy bìa lá",
+      "normalized": "chay bia la"
+    },
+    {
+      "case_id": "R04",
+      "phrase": "cháy bìa lá vi khuẩn",
+      "normalized": "chay bia la vi khuan"
+    },
+    {
+      "case_id": "R04",
+      "phrase": "cháy mép lá",
+      "normalized": "chay mep la"
+    },
+    {
+      "case_id": "R04",
+      "phrase": "lá bạc từ chóp",
+      "normalized": "la bac tu chop"
+    },
+    {
+      "case_id": "R05",
+      "phrase": "đốm bầu dục",
+      "normalized": "dom bau duc"
+    },
+    {
+      "case_id": "R05",
+      "phrase": "Đốm nâu",
+      "normalized": "dom nau"
+    },
+    {
+      "case_id": "R05",
+      "phrase": "đốm tròn nâu",
+      "normalized": "dom tron nau"
+    },
+    {
+      "case_id": "R06",
+      "phrase": "cháy rầy",
+      "normalized": "chay ray"
+    },
+    {
+      "case_id": "R06",
+      "phrase": "côn trùng ở gốc",
+      "normalized": "con trung o goc"
+    },
+    {
+      "case_id": "R06",
+      "phrase": "Rầy nâu",
+      "normalized": "ray nau"
+    },
+    {
+      "case_id": "R07",
+      "phrase": "lá cuốn",
+      "normalized": "la cuon"
+    },
+    {
+      "case_id": "R07",
+      "phrase": "Sâu cuốn lá",
+      "normalized": "sau cuon la"
+    },
+    {
+      "case_id": "R07",
+      "phrase": "sâu cuốn lá nhỏ",
+      "normalized": "sau cuon la nho"
+    },
+    {
+      "case_id": "R07",
+      "phrase": "vệt trắng trong lá cuốn",
+      "normalized": "vet trang trong la cuon"
+    },
+    {
+      "case_id": "R08",
+      "phrase": "bông bạc",
+      "normalized": "bong bac"
+    },
+    {
+      "case_id": "R08",
+      "phrase": "dảnh héo",
+      "normalized": "danh heo"
+    },
+    {
+      "case_id": "R08",
+      "phrase": "Sâu đục thân",
+      "normalized": "sau duc than"
+    },
+    {
+      "case_id": "R08",
+      "phrase": "sâu đục thân hai chấm",
+      "normalized": "sau duc than hai cham"
+    },
+    {
+      "case_id": "R09",
+      "phrase": "bụi lúa thấp vàng",
+      "normalized": "bui lua thap vang"
+    },
+    {
+      "case_id": "R09",
+      "phrase": "lúa lùn vàng",
+      "normalized": "lua lun vang"
+    },
+    {
+      "case_id": "R09",
+      "phrase": "Vàng lùn",
+      "normalized": "vang lun"
+    },
+    {
+      "case_id": "R10",
+      "phrase": "cây thấp lá xoắn",
+      "normalized": "cay thap la xoan"
+    },
+    {
+      "case_id": "R10",
+      "phrase": "lá xoắn",
+      "normalized": "la xoan"
+    },
+    {
+      "case_id": "R10",
+      "phrase": "Lùn xoắn lá",
+      "normalized": "lun xoan la"
+    },
+    {
+      "case_id": "R11",
+      "phrase": "nghẹt rễ",
+      "normalized": "nghet re"
+    },
+    {
+      "case_id": "R11",
+      "phrase": "Nghi ngộ độc hữu cơ hoặc nghẹt rễ",
+      "normalized": "nghi ngo doc huu co hoac nghet re"
+    },
+    {
+      "case_id": "R11",
+      "phrase": "ngộ độc hữu cơ",
+      "normalized": "ngo doc huu co"
+    },
+    {
+      "case_id": "R11",
+      "phrase": "rễ đen",
+      "normalized": "re den"
+    },
+    {
+      "case_id": "R11",
+      "phrase": "ruộng nhiều rơm rạ",
+      "normalized": "ruong nhieu rom ra"
+    },
+    {
+      "case_id": "R12",
+      "phrase": "bệnh hoa cúc",
+      "normalized": "benh hoa cuc"
+    },
+    {
+      "case_id": "R12",
+      "phrase": "hạt có cục vàng",
+      "normalized": "hat co cuc vang"
+    },
+    {
+      "case_id": "R12",
+      "phrase": "mụn xanh trên bông",
+      "normalized": "mun xanh tren bong"
+    },
+    {
+      "case_id": "R12",
+      "phrase": "than vàng",
+      "normalized": "than vang"
+    },
+    {
+      "case_id": "R12",
+      "phrase": "Vàng giả hạt",
+      "normalized": "vang gia hat"
+    },
+    {
+      "case_id": "R13",
+      "phrase": "cây vống",
+      "normalized": "cay vong"
+    },
+    {
+      "case_id": "R13",
+      "phrase": "Lúa von",
+      "normalized": "lua von"
+    },
+    {
+      "case_id": "R13",
+      "phrase": "mạ cao bất thường",
+      "normalized": "ma cao bat thuong"
+    },
+    {
+      "case_id": "R13",
+      "phrase": "mạ vươn dài",
+      "normalized": "ma vuon dai"
+    },
+    {
+      "case_id": "R14",
+      "phrase": "đốm dài song song gân",
+      "normalized": "dom dai song song gan"
+    },
+    {
+      "case_id": "R14",
+      "phrase": "Đốm nâu hẹp",
+      "normalized": "dom nau hep"
+    },
+    {
+      "case_id": "R14",
+      "phrase": "vết nâu hẹp",
+      "normalized": "vet nau hep"
+    },
+    {
+      "case_id": "R15",
+      "phrase": "đòng không thoát bẹ",
+      "normalized": "dong khong thoat be"
+    },
+    {
+      "case_id": "R15",
+      "phrase": "thối bẹ",
+      "normalized": "thoi be"
+    },
+    {
+      "case_id": "R15",
+      "phrase": "Thối bẹ lá đòng",
+      "normalized": "thoi be la dong"
+    },
+    {
+      "case_id": "R16",
+      "phrase": "Đốm sọc vi khuẩn",
+      "normalized": "dom soc vi khuan"
+    },
+    {
+      "case_id": "R16",
+      "phrase": "sọc nâu giữa gân",
+      "normalized": "soc nau giua gan"
+    },
+    {
+      "case_id": "R16",
+      "phrase": "sọc trong giữa gân",
+      "normalized": "soc trong giua gan"
+    },
+    {
+      "case_id": "R17",
+      "phrase": "gốc mạ bị cắn",
+      "normalized": "goc ma bi can"
+    },
+    {
+      "case_id": "R17",
+      "phrase": "mạ mất từng cụm",
+      "normalized": "ma mat tung cum"
+    },
+    {
+      "case_id": "R17",
+      "phrase": "Ốc bươu vàng",
+      "normalized": "oc buou vang"
+    },
+    {
+      "case_id": "R17",
+      "phrase": "trứng hồng",
+      "normalized": "trung hong"
+    },
+    {
+      "case_id": "R18",
+      "phrase": "bọ xít dài trên bông",
+      "normalized": "bo xit dai tren bong"
+    },
+    {
+      "case_id": "R18",
+      "phrase": "bọ xít hôi",
+      "normalized": "bo xit hoi"
+    },
+    {
+      "case_id": "R18",
+      "phrase": "Bọ xít hôi hại lúa",
+      "normalized": "bo xit hoi hai lua"
+    },
+    {
+      "case_id": "R18",
+      "phrase": "bọ xít trên lúa ngậm sữa",
+      "normalized": "bo xit tren lua ngam sua"
+    },
+    {
+      "case_id": "R19",
+      "phrase": "bọ đen sát gốc",
+      "normalized": "bo den sat goc"
+    },
+    {
+      "case_id": "R19",
+      "phrase": "bọ đen trong bẹ lúa",
+      "normalized": "bo den trong be lua"
+    },
+    {
+      "case_id": "R19",
+      "phrase": "bọ xít đen",
+      "normalized": "bo xit den"
+    },
+    {
+      "case_id": "R19",
+      "phrase": "Bọ xít đen hại lúa",
+      "normalized": "bo xit den hai lua"
+    },
+    {
+      "case_id": "R20",
+      "phrase": "ống lá nổi",
+      "normalized": "ong la noi"
+    },
+    {
+      "case_id": "R20",
+      "phrase": "ống lá trên mặt nước",
+      "normalized": "ong la tren mat nuoc"
+    },
+    {
+      "case_id": "R20",
+      "phrase": "Sâu phao",
+      "normalized": "sau phao"
+    },
+    {
+      "case_id": "R21",
+      "phrase": "đốm nâu như bụi",
+      "normalized": "dom nau nhu bui"
+    },
+    {
+      "case_id": "R21",
+      "phrase": "lúa còi từng mảng",
+      "normalized": "lua coi tung mang"
+    },
+    {
+      "case_id": "R21",
+      "phrase": "Nghi thiếu kẽm",
+      "normalized": "nghi thieu kem"
+    },
+    {
+      "case_id": "R21",
+      "phrase": "thiếu kẽm",
+      "normalized": "thieu kem"
+    },
+    {
+      "case_id": "R22",
+      "phrase": "đốm nâu lá già",
+      "normalized": "dom nau la gia"
+    },
+    {
+      "case_id": "R22",
+      "phrase": "lá lúa màu đồng",
+      "normalized": "la lua mau dong"
+    },
+    {
+      "case_id": "R22",
+      "phrase": "Nghi ngộ độc sắt",
+      "normalized": "nghi ngo doc sat"
+    },
+    {
+      "case_id": "R22",
+      "phrase": "ngộ độc sắt",
+      "normalized": "ngo doc sat"
+    },
+    {
+      "case_id": "R23",
+      "phrase": "chóp lá trắng",
+      "normalized": "chop la trang"
+    },
+    {
+      "case_id": "R23",
+      "phrase": "lúa bị mặn",
+      "normalized": "lua bi man"
+    },
+    {
+      "case_id": "R23",
+      "phrase": "Nghi tổn thương do mặn",
+      "normalized": "nghi ton thuong do man"
+    },
+    {
+      "case_id": "R23",
+      "phrase": "nước ruộng mặn",
+      "normalized": "nuoc ruong man"
+    },
+    {
+      "case_id": "R24",
+      "phrase": "đen lép hạt",
+      "normalized": "den lep hat"
+    },
+    {
+      "case_id": "R24",
+      "phrase": "hạt bị lem",
+      "normalized": "hat bi lem"
+    },
+    {
+      "case_id": "R24",
+      "phrase": "hạt lem lép",
+      "normalized": "hat lem lep"
+    },
+    {
+      "case_id": "R24",
+      "phrase": "hạt lép",
+      "normalized": "hat lep"
+    },
+    {
+      "case_id": "R24",
+      "phrase": "lem lép hạt",
+      "normalized": "lem lep hat"
+    },
+    {
+      "case_id": "R25",
+      "phrase": "bẹ lá cờ có vết tím",
+      "normalized": "be la co co vet tim"
+    },
+    {
+      "case_id": "R25",
+      "phrase": "bẹ lúa màu tím",
+      "normalized": "be lua mau tim"
+    },
+    {
+      "case_id": "R25",
+      "phrase": "hạt lép",
+      "normalized": "hat lep"
+    },
+    {
+      "case_id": "R25",
+      "phrase": "nhện gié",
+      "normalized": "nhen gie"
+    },
+    {
+      "case_id": "R26",
+      "phrase": "cháy lá có vân sọc",
+      "normalized": "chay la co van soc"
+    },
+    {
+      "case_id": "R26",
+      "phrase": "Cháy lá có vân sọc (leaf scald)",
+      "normalized": "chay la co van soc leaf scald"
+    },
+    {
+      "case_id": "R26",
+      "phrase": "leaf scald",
+      "normalized": "leaf scald"
+    },
+    {
+      "case_id": "R26",
+      "phrase": "vết nâu xen dải ở chóp lá",
+      "normalized": "vet nau xen dai o chop la"
+    },
+    {
+      "case_id": "R27",
+      "phrase": "stem rot",
+      "normalized": "stem rot"
+    },
+    {
+      "case_id": "R27",
+      "phrase": "thối thân lúa",
+      "normalized": "thoi than lua"
+    },
+    {
+      "case_id": "R27",
+      "phrase": "vết đen bẹ sát mực nước",
+      "normalized": "vet den be sat muc nuoc"
+    },
+    {
+      "case_id": "R28",
+      "phrase": "aggregate sheath spot",
+      "normalized": "aggregate sheath spot"
+    },
+    {
+      "case_id": "R28",
+      "phrase": "đốm vòng bẹ lá",
+      "normalized": "dom vong be la"
+    },
+    {
+      "case_id": "R28",
+      "phrase": "đốm vòng trên bẹ lá",
+      "normalized": "dom vong tren be la"
+    },
+    {
+      "case_id": "R28",
+      "phrase": "Đốm vòng trên bẹ lá lúa",
+      "normalized": "dom vong tren be la lua"
+    },
+    {
+      "case_id": "R29",
+      "phrase": "hạt lúa nứt có bột đen",
+      "normalized": "hat lua nut co bot den"
+    },
+    {
+      "case_id": "R29",
+      "phrase": "kernel smut",
+      "normalized": "kernel smut"
+    },
+    {
+      "case_id": "R29",
+      "phrase": "than đen hạt",
+      "normalized": "than den hat"
+    },
+    {
+      "case_id": "R29",
+      "phrase": "Than đen hạt lúa",
+      "normalized": "than den hat lua"
+    },
+    {
+      "case_id": "R30",
+      "phrase": "nấm nước trên mạ",
+      "normalized": "nam nuoc tren ma"
+    },
+    {
+      "case_id": "R30",
+      "phrase": "seed rot",
+      "normalized": "seed rot"
+    },
+    {
+      "case_id": "R30",
+      "phrase": "sợi trắng quanh hạt lúa mới gieo",
+      "normalized": "soi trang quanh hat lua moi gieo"
+    },
+    {
+      "case_id": "R30",
+      "phrase": "thối hạt giống lúa",
+      "normalized": "thoi hat giong lua"
+    },
+    {
+      "case_id": "R30",
+      "phrase": "Thối hạt giống và mạ do nấm nước",
+      "normalized": "thoi hat giong va ma do nam nuoc"
+    },
+    {
+      "case_id": "R31",
+      "phrase": "lúa vàng cam ít nhánh",
+      "normalized": "lua vang cam it nhanh"
+    },
+    {
+      "case_id": "R31",
+      "phrase": "lùn lá vàng cam",
+      "normalized": "lun la vang cam"
+    },
+    {
+      "case_id": "R31",
+      "phrase": "Nghi bệnh Tungro",
+      "normalized": "nghi benh tungro"
+    },
+    {
+      "case_id": "R31",
+      "phrase": "tungro",
+      "normalized": "tungro"
+    },
+    {
+      "case_id": "R32",
+      "phrase": "bông méo xoắn trổ kẹt",
+      "normalized": "bong meo xoan tro ket"
+    },
+    {
+      "case_id": "R32",
+      "phrase": "Nghi tuyến trùng thân lúa (Ufra)",
+      "normalized": "nghi tuyen trung than lua ufra"
+    },
+    {
+      "case_id": "R32",
+      "phrase": "tuyến trùng thân lúa",
+      "normalized": "tuyen trung than lua"
+    },
+    {
+      "case_id": "R32",
+      "phrase": "ufra",
+      "normalized": "ufra"
+    },
+    {
+      "case_id": "R33",
+      "phrase": "chóp lá trắng khô rách",
+      "normalized": "chop la trang kho rach"
+    },
+    {
+      "case_id": "R33",
+      "phrase": "trắng chóp lá do tuyến trùng",
+      "normalized": "trang chop la do tuyen trung"
+    },
+    {
+      "case_id": "R33",
+      "phrase": "Trắng chóp lá nghi tuyến trùng",
+      "normalized": "trang chop la nghi tuyen trung"
+    },
+    {
+      "case_id": "R33",
+      "phrase": "white tip lúa",
+      "normalized": "white tip lua"
+    }
+  ],
+  "sources": [
+    {
+      "id": "CF_BRANCH",
+      "title": "Mọt đục cành cà phê",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/mot-duc-canh-ca-phe/"
+    },
+    {
+      "id": "CF_BUG",
+      "title": "Bọ xít muỗi gây hại cây trồng",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/bo-xit-muoi-gay-hai-cay-trong/"
+    },
+    {
+      "id": "CF_COL_VN",
+      "title": "Tài liệu hướng dẫn sản xuất cà phê chè bền vững tại Việt Nam",
+      "publisher": "Trung tâm Khuyến nông Quốc gia (nơi công bố)",
+      "url": "https://khuyennongvn.gov.vn/portals/0/tailieu/2021/09/hangweb/tot_tai_lieu_huong_dan_san_xuat_ca_phe_ben_vung_danh_cho_tap_huan_vien_final_da_nen.pdf"
+    },
+    {
+      "id": "CF_COL_WASI",
+      "title": "Quy trình tạm thời sản xuất giống cà phê",
+      "publisher": "Viện Khoa học Kỹ thuật Nông Lâm nghiệp Tây Nguyên (WASI, nơi công bố)",
+      "url": "https://wasi.org.vn/wp-content/uploads/2021/09/QUYET-DINH-BAN-HANH-CAC-QUY-TRINH-TAM-THOI-SAN-XUAT-GIONG-CA-PHE-20.4.2021.pdf"
+    },
+    {
+      "id": "CF_DN",
+      "title": "Điều tra bệnh hại cây cà phê và biện pháp quản lý tại tỉnh Đắk Nông",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/dieu-tra-benh-hai-cay-ca-phe-va-bien-phap-quan-ly-tai-tinh-dak-nong/"
+    },
+    {
+      "id": "CF_FUNGI",
+      "title": "Comprehensive Review of Fungi on Coffee",
+      "publisher": "Nguồn học thuật trên PubMed Central",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9024902/"
+    },
+    {
+      "id": "CF_ICM",
+      "title": "Quy trình quản lý cây trồng tổng hợp cho cà phê vối giai đoạn kinh doanh",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/quy-trinh-quan-ly-cay-trong-tong-hop-icm-cho-ca-phe-voi-giai-doan-kinh-doanh/"
+    },
+    {
+      "id": "CF_INCAPER",
+      "title": "Conilon Coffee Disease Management",
+      "publisher": "Incaper, Espírito Santo, Brazil",
+      "url": "https://biblioteca.incaper.es.gov.br/digital/bitstream/123456789/3529/1/chapter-18-diseases-management.pdf"
+    },
+    {
+      "id": "CF_NURSERY",
+      "title": "Coffee Seedling Nursery Management Guide",
+      "publisher": "World Coffee Research",
+      "url": "https://cdn2.assets-servd.host/worldcoffee-research/production/documents/Guide-2-Nurseries-v2-2021-EN_052122.pdf?dm=1665781570"
+    },
+    {
+      "id": "CF_ORG",
+      "title": "Quy trình cà phê vối hữu cơ",
+      "publisher": "WASI (trang lưu tài liệu)",
+      "url": "https://wasi.org.vn/wp-content/uploads/2025/10/6.-1-Quy-trinh-ca-phe-voi-huu-co.pdf"
+    },
+    {
+      "id": "CF_SAMPLE",
+      "title": "Hướng dẫn lấy mẫu phân tích tuyến trùng và nấm bệnh",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/huong-dan-cach-lay-mau-phan-tich-tuyen-trung-va-nam-benh-tren-cay-ca-phe-va-ho-tieu/"
+    },
+    {
+      "id": "CF_STEM",
+      "title": "Trả lời câu hỏi của anh Hưng: Nấm hay sâu",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/tra-loi-cau-hoi-cua-anh-hung-nam-hay-sau/"
+    },
+    {
+      "id": "CF_WASI_BVTV",
+      "title": "Bộ môn bảo vệ thực vật — nhóm bệnh hại cây cà phê",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/cac-phong-bo-mon-nguyen-cuu/bo-mon-bao-ve-thuc-vat/"
+    },
+    {
+      "id": "DUR",
+      "title": "Sổ tay canh tác sầu riêng theo tiêu chuẩn VietGAP",
+      "publisher": "WASI (trang lưu tài liệu)",
+      "url": "https://wasi.org.vn/wp-content/uploads/2025/11/7.-So-tay-ToF_cay-sau-rieng_VietGAP.pdf"
+    },
+    {
+      "id": "DUR_FLESH",
+      "title": "Giải đáp về cháy múi và sượng cơm sầu riêng",
+      "publisher": "Khuyến nông Lâm Đồng",
+      "url": "https://khuyennong.lamdong.gov.vn/News/tu-van-hoi-dap/1/01/2248.aspx"
+    },
+    {
+      "id": "DUR_ID",
+      "title": "Pedoman Pengembangan Durian di Lahan Rawa",
+      "publisher": "Tổng cục Làm vườn, Bộ Nông nghiệp Indonesia",
+      "url": "https://hortikultura.pertanian.go.id/wp-content/uploads/2024/10/Buku-Pedoman-Pengembangan-Durian-Rawa-Rev-3-5-21_watermark.pdf"
+    },
+    {
+      "id": "DUR_MY",
+      "title": "Pakej Teknologi Durian",
+      "publisher": "Jabatan Pertanian Malaysia (bản PDF lưu trên azmi.my)",
+      "url": "https://azmi.my/wp-content/uploads/2024/09/Buku-Pakej-Teknologi-Durian-17-September-2024.pdf"
+    },
+    {
+      "id": "DUR_VEXANS",
+      "title": "First report of Phytopythium vexans causing root rot disease on durian in Vietnam",
+      "publisher": "Thao và cộng sự, New Disease Reports (2020)",
+      "url": "https://www.ndrs.org.uk/pdfs/041/NDR_041002.pdf"
+    },
+    {
+      "id": "DUR_WATER",
+      "title": "Tưới nước và bón phân cho cây sầu riêng",
+      "publisher": "WASI",
+      "url": "https://wasi.org.vn/tuoi-nuoc-va-bon-phan-cho-cay-sau-rieng/"
+    },
+    {
+      "id": "RICE_AGGREGATE",
+      "title": "Aggregate Sheath Spot of Rice",
+      "publisher": "UC Statewide IPM Program, California",
+      "url": "https://ipm.ucanr.edu/agriculture/rice/aggregate-sheath-spot-of-rice/"
+    },
+    {
+      "id": "RICE_BLAST",
+      "title": "Rice Blast",
+      "publisher": "UC Statewide IPM Program",
+      "url": "https://ipm.ucanr.edu/agriculture/rice/rice-blast/"
+    },
+    {
+      "id": "RICE_BLS",
+      "title": "Bacterial Leaf Streak",
+      "publisher": "Tamil Nadu Agricultural University",
+      "url": "https://agritech.tnau.ac.in/crop_protection/rice_diseases/rice_8.html"
+    },
+    {
+      "id": "RICE_BPH",
+      "title": "Brown planthopper",
+      "publisher": "Rice Research and Development Institute, Sri Lanka",
+      "url": "https://doa.gov.lk/rrdi_pests_brownplanthopper/"
+    },
+    {
+      "id": "RICE_CASEWORM",
+      "title": "Factsheet — Caseworm",
+      "publisher": "Lucidcentral",
+      "url": "https://keyserver.lucidcentral.org/key-server/data/0e090d01-0209-460e-810c-0d060708030c/media/Html/Caseworm.htm"
+    },
+    {
+      "id": "RICE_DIS",
+      "title": "Diagnosis of Common Diseases of Rice",
+      "publisher": "IRRI",
+      "url": "https://www.knowledgebank.irri.org/images/docs/diagnostic-of-common-diseases-of-rice.pdf"
+    },
+    {
+      "id": "RICE_FIELD",
+      "title": "Harmful organisms in Philippine rice fields",
+      "publisher": "PhilRice",
+      "url": "https://www.philrice.gov.ph/wp-content/uploads/2023/02/Harmful-organisms-in-Philippine-rice-fields.pdf"
+    },
+    {
+      "id": "RICE_KERNEL",
+      "title": "Kernel Smut",
+      "publisher": "UC Statewide IPM Program, California",
+      "url": "https://ipm.ucanr.edu/agriculture/rice/kernel-smut/"
+    },
+    {
+      "id": "RICE_MINERAL",
+      "title": "Guide to field identification of crop mineral disorders",
+      "publisher": "FAO (trang lưu tài liệu)",
+      "url": "https://www.fao.org/fileadmin/templates/nr/images/resources/pdf_documents/misc27.pdf"
+    },
+    {
+      "id": "RICE_PEST",
+      "title": "PhilRice warns of major rice pest threats in early 2026",
+      "publisher": "DA-PhilRice",
+      "url": "https://www.philrice.gov.ph/philrice-warns-of-major-rice-pest-threats-in-early-2026/"
+    },
+    {
+      "id": "RICE_ROOT",
+      "title": "Hạn chế ngộ độc hữu cơ cho lúa mùa",
+      "publisher": "Trung tâm Khuyến nông Quốc gia",
+      "url": "https://khuyennongvn.gov.vn/khoa-hoc-cong-nghe/khcn-trong-nuoc/han-che-ngo-doc-huu-co-cho-lua-mua-14263.html"
+    },
+    {
+      "id": "RICE_SALT",
+      "title": "Rice breeding manual",
+      "publisher": "PhilRice",
+      "url": "https://www.philrice.gov.ph/wp-content/uploads/2023/05/Rice-Breeding-Manual_May-2023.pdf"
+    },
+    {
+      "id": "RICE_SEEDROT",
+      "title": "Seed Rot and Seedling Diseases",
+      "publisher": "UC Statewide IPM Program, California",
+      "url": "https://ipm.ucanr.edu/agriculture/rice/seed-rot-and-seedling-diseases/"
+    },
+    {
+      "id": "RICE_STEMROT",
+      "title": "Stem Rot of Rice",
+      "publisher": "UC Statewide IPM Program, California",
+      "url": "https://ipm.ucanr.edu/agriculture/rice/stem-rot-of-rice/"
+    },
+    {
+      "id": "RICE_TG",
+      "title": "Sổ tay dịch hại trên cây lúa",
+      "publisher": "Sở Nông nghiệp và PTNT Tiền Giang",
+      "url": "https://vn.agriextension.com/wp-content/uploads/2024/06/So_tay_dich_hai_tren_cay_lua.pdf"
+    },
+    {
+      "id": "RICE_VN",
+      "title": "Sổ tay hướng dẫn phòng trừ rầy nâu, bệnh vàng lùn, lùn xoắn lá hại lúa",
+      "publisher": "Trung tâm Khuyến nông Quốc gia (trang lưu tài liệu)",
+      "url": "https://khuyennongvn.gov.vn/portals/0/tailieu/2018/05/quynhkn/so_tay_ray_nau_out.pdf"
+    },
+    {
+      "id": "RICE_ZINC",
+      "title": "Zinc (Zn) — rice fact sheet",
+      "publisher": "IRRI",
+      "url": "https://www.knowledgebank.irri.org/ericeproduction/PDF_%26_Docs/fs_zinc.pdf"
+    }
+  ],
+  "case_sources": [
+    {
+      "case_id": "C01",
+      "source_id": "CF_FUNGI",
+      "locator": "Coffee Leaf Rust"
+    },
+    {
+      "case_id": "C01",
+      "source_id": "CF_WASI_BVTV",
+      "locator": "Danh mục dịch hại trên cây cà phê"
+    },
+    {
+      "case_id": "C02",
+      "source_id": "CF_DN",
+      "locator": "Phần kết quả về bệnh nấm hồng"
+    },
+    {
+      "case_id": "C02",
+      "source_id": "CF_WASI_BVTV",
+      "locator": "Danh mục dịch hại trên cây cà phê"
+    },
+    {
+      "case_id": "C03",
+      "source_id": "CF_SAMPLE",
+      "locator": "Lấy mẫu ở vườn cà phê kinh doanh"
+    },
+    {
+      "case_id": "C03",
+      "source_id": "CF_WASI_BVTV",
+      "locator": "Danh mục dịch hại trên cây cà phê"
+    },
+    {
+      "case_id": "C04",
+      "source_id": "CF_FUNGI",
+      "locator": "Brown Eye Spot or Cercospora Blotch"
+    },
+    {
+      "case_id": "C05",
+      "source_id": "CF_ICM",
+      "locator": "Rệp sáp hại quả"
+    },
+    {
+      "case_id": "C06",
+      "source_id": "CF_ICM",
+      "locator": "Rệp sáp hại rễ"
+    },
+    {
+      "case_id": "C07",
+      "source_id": "CF_BRANCH",
+      "locator": "Phần triệu chứng gây hại"
+    },
+    {
+      "case_id": "C08",
+      "source_id": "CF_ICM",
+      "locator": "Mọt đục quả"
+    },
+    {
+      "case_id": "C09",
+      "source_id": "CF_ORG",
+      "locator": "Bệnh khô cành, khô quả"
+    },
+    {
+      "case_id": "C09",
+      "source_id": "CF_WASI_BVTV",
+      "locator": "Danh mục dịch hại trên cây cà phê"
+    },
+    {
+      "case_id": "C10",
+      "source_id": "CF_STEM",
+      "locator": "Phần trả lời về triệu chứng nứt thân"
+    },
+    {
+      "case_id": "C11",
+      "source_id": "CF_ORG",
+      "locator": "Vàng lá do tuyến trùng gây hại rễ"
+    },
+    {
+      "case_id": "C11",
+      "source_id": "CF_WASI_BVTV",
+      "locator": "Danh mục dịch hại trên cây cà phê"
+    },
+    {
+      "case_id": "C12",
+      "source_id": "CF_ORG",
+      "locator": "Vàng lá do dịch hại khác"
+    },
+    {
+      "case_id": "C13",
+      "source_id": "CF_BUG",
+      "locator": "Phần gây hại trên cà phê chè"
+    },
+    {
+      "case_id": "C14",
+      "source_id": "CF_ORG",
+      "locator": "Phân biệt nguyên nhân vàng lá do điều kiện sinh lý"
+    },
+    {
+      "case_id": "C15",
+      "source_id": "CF_ORG",
+      "locator": "Phân biệt nguyên nhân vàng lá do điều kiện sinh lý"
+    },
+    {
+      "case_id": "C16",
+      "source_id": "CF_NURSERY",
+      "locator": "Nutritional deficiencies — Nitrogen"
+    },
+    {
+      "case_id": "C17",
+      "source_id": "CF_NURSERY",
+      "locator": "Nutritional deficiencies — Magnesium"
+    },
+    {
+      "case_id": "C18",
+      "source_id": "CF_NURSERY",
+      "locator": "Nutritional deficiencies — Potassium"
+    },
+    {
+      "case_id": "C19",
+      "source_id": "CF_COL_VN",
+      "locator": "Hợp phần 7, mục 6.2: Bệnh lở cổ rễ"
+    },
+    {
+      "case_id": "C19",
+      "source_id": "CF_COL_WASI",
+      "locator": "Mục Bệnh lở cổ rễ: mô tả trên cây con và giai đoạn kiến thiết cơ bản"
+    },
+    {
+      "case_id": "C20",
+      "source_id": "CF_INCAPER",
+      "locator": "Chương 18, mục 2.5.1: Target Leaf Spot, Hình 12"
+    },
+    {
+      "case_id": "C21",
+      "source_id": "CF_INCAPER",
+      "locator": "Chương 18, mục 2.5.2: Coffee Thread Blight"
+    },
+    {
+      "case_id": "C22",
+      "source_id": "CF_INCAPER",
+      "locator": "Chương 18, mục 2.5.4: Phoma Leaf Spot, phần Symptoms và Hình 13"
+    },
+    {
+      "case_id": "C23",
+      "source_id": "CF_INCAPER",
+      "locator": "Chương 18, mục 2.5.6: Myrothecium Leaf Spot"
+    },
+    {
+      "case_id": "C24",
+      "source_id": "CF_INCAPER",
+      "locator": "Chương 18, mục 3.1: Black Root Rot, Hình 14"
+    },
+    {
+      "case_id": "D01",
+      "source_id": "DUR",
+      "locator": "1.11.3.2"
+    },
+    {
+      "case_id": "D02",
+      "source_id": "DUR",
+      "locator": "1.11.3.1"
+    },
+    {
+      "case_id": "D03",
+      "source_id": "DUR",
+      "locator": "1.11.3.3"
+    },
+    {
+      "case_id": "D04",
+      "source_id": "DUR",
+      "locator": "1.11.3.5"
+    },
+    {
+      "case_id": "D05",
+      "source_id": "DUR",
+      "locator": "1.11.3.6"
+    },
+    {
+      "case_id": "D06",
+      "source_id": "DUR",
+      "locator": "1.11.3.7"
+    },
+    {
+      "case_id": "D07",
+      "source_id": "DUR",
+      "locator": "1.11.2.3"
+    },
+    {
+      "case_id": "D08",
+      "source_id": "DUR",
+      "locator": "1.11.2.4"
+    },
+    {
+      "case_id": "D09",
+      "source_id": "DUR",
+      "locator": "1.11.2.5"
+    },
+    {
+      "case_id": "D10",
+      "source_id": "DUR",
+      "locator": "1.11.2.6"
+    },
+    {
+      "case_id": "D11",
+      "source_id": "DUR",
+      "locator": "1.11.2.1"
+    },
+    {
+      "case_id": "D12",
+      "source_id": "DUR",
+      "locator": "1.11.2.2"
+    },
+    {
+      "case_id": "D13",
+      "source_id": "DUR",
+      "locator": "1.11.2.7"
+    },
+    {
+      "case_id": "D14",
+      "source_id": "DUR",
+      "locator": "1.11.2.4, Hình 37–38"
+    },
+    {
+      "case_id": "D15",
+      "source_id": "DUR_WATER",
+      "locator": "Phần biểu hiện thiếu nước"
+    },
+    {
+      "case_id": "D16",
+      "source_id": "DUR",
+      "locator": "1.9.3"
+    },
+    {
+      "case_id": "D17",
+      "source_id": "DUR_FLESH",
+      "locator": "Phần hỏi đáp về sượng cơm và cháy múi"
+    },
+    {
+      "case_id": "D18",
+      "source_id": "DUR_FLESH",
+      "locator": "Phần hỏi đáp về sượng cơm và cháy múi"
+    },
+    {
+      "case_id": "D19",
+      "source_id": "DUR",
+      "locator": "Trang in 49, Hình 51"
+    },
+    {
+      "case_id": "D20",
+      "source_id": "DUR_ID",
+      "locator": "Mục Penyakit, số 2: Mati cabang atau Ranting"
+    },
+    {
+      "case_id": "D20",
+      "source_id": "DUR_MY",
+      "locator": "Mục 6.2, bệnh số 10: Cendawan Angin, phần dấu hiệu"
+    },
+    {
+      "case_id": "D21",
+      "source_id": "DUR_MY",
+      "locator": "Mục 6.2, bệnh số 3: Reput Buah Sclerotium, phần dấu hiệu"
+    },
+    {
+      "case_id": "D22",
+      "source_id": "DUR_MY",
+      "locator": "Mục 6.2, bệnh số 11: Akar Putih, phần dấu hiệu"
+    },
+    {
+      "case_id": "D23",
+      "source_id": "DUR_MY",
+      "locator": "Mục 6.2, bệnh số 12: Reput Akar Pythium, phần dấu hiệu"
+    },
+    {
+      "case_id": "D23",
+      "source_id": "DUR_VEXANS",
+      "locator": "Báo cáo trang 2, phần mô tả ca bệnh và Hình 1"
+    },
+    {
+      "case_id": "R01",
+      "source_id": "RICE_BLAST",
+      "locator": "Symptoms"
+    },
+    {
+      "case_id": "R01",
+      "source_id": "RICE_TG",
+      "locator": "Mục 5.1, Hình 16"
+    },
+    {
+      "case_id": "R02",
+      "source_id": "RICE_BLAST",
+      "locator": "Symptoms — neck blast"
+    },
+    {
+      "case_id": "R02",
+      "source_id": "RICE_TG",
+      "locator": "Mục 5.1, Hình 17"
+    },
+    {
+      "case_id": "R03",
+      "source_id": "RICE_DIS",
+      "locator": "Sheath Blight"
+    },
+    {
+      "case_id": "R03",
+      "source_id": "RICE_TG",
+      "locator": "Mục 5.2, Hình 18"
+    },
+    {
+      "case_id": "R04",
+      "source_id": "RICE_DIS",
+      "locator": "Bacterial Blight"
+    },
+    {
+      "case_id": "R04",
+      "source_id": "RICE_TG",
+      "locator": "Mục 5.3, Hình 19"
+    },
+    {
+      "case_id": "R05",
+      "source_id": "RICE_DIS",
+      "locator": "Brown Spot"
+    },
+    {
+      "case_id": "R06",
+      "source_id": "RICE_BPH",
+      "locator": "Damage and Symptoms"
+    },
+    {
+      "case_id": "R06",
+      "source_id": "RICE_TG",
+      "locator": "Mục rầy nâu, Hình 7"
+    },
+    {
+      "case_id": "R07",
+      "source_id": "RICE_PEST",
+      "locator": "Rice leaffolders"
+    },
+    {
+      "case_id": "R07",
+      "source_id": "RICE_TG",
+      "locator": "Mục sâu cuốn lá nhỏ, Hình 8–9"
+    },
+    {
+      "case_id": "R08",
+      "source_id": "RICE_PEST",
+      "locator": "Rice stemborers"
+    },
+    {
+      "case_id": "R08",
+      "source_id": "RICE_TG",
+      "locator": "Mục sâu đục thân, Hình 10"
+    },
+    {
+      "case_id": "R09",
+      "source_id": "RICE_VN",
+      "locator": "Bệnh vàng lùn"
+    },
+    {
+      "case_id": "R10",
+      "source_id": "RICE_VN",
+      "locator": "Bệnh lùn xoắn lá"
+    },
+    {
+      "case_id": "R11",
+      "source_id": "RICE_ROOT",
+      "locator": "Dấu hiệu ngộ độc hữu cơ"
+    },
+    {
+      "case_id": "R12",
+      "source_id": "RICE_DIS",
+      "locator": "False Smut"
+    },
+    {
+      "case_id": "R13",
+      "source_id": "RICE_DIS",
+      "locator": "Bakanae"
+    },
+    {
+      "case_id": "R14",
+      "source_id": "RICE_DIS",
+      "locator": "Narrow Brown Spot"
+    },
+    {
+      "case_id": "R15",
+      "source_id": "RICE_DIS",
+      "locator": "Sheath Rot"
+    },
+    {
+      "case_id": "R16",
+      "source_id": "RICE_BLS",
+      "locator": "Symptoms"
+    },
+    {
+      "case_id": "R17",
+      "source_id": "RICE_FIELD",
+      "locator": "Golden apple snail"
+    },
+    {
+      "case_id": "R17",
+      "source_id": "RICE_TG",
+      "locator": "Mục ốc bươu vàng, Hình 2"
+    },
+    {
+      "case_id": "R18",
+      "source_id": "RICE_FIELD",
+      "locator": "Rice bug"
+    },
+    {
+      "case_id": "R19",
+      "source_id": "RICE_FIELD",
+      "locator": "Rice black bug"
+    },
+    {
+      "case_id": "R20",
+      "source_id": "RICE_CASEWORM",
+      "locator": "Damage symptoms"
+    },
+    {
+      "case_id": "R20",
+      "source_id": "RICE_TG",
+      "locator": "Mục sâu phao đục bẹ, Hình 11–12"
+    },
+    {
+      "case_id": "R21",
+      "source_id": "RICE_ZINC",
+      "locator": "Zn deficiency symptoms"
+    },
+    {
+      "case_id": "R22",
+      "source_id": "RICE_MINERAL",
+      "locator": "Iron toxicity — symptoms in irrigated rice"
+    },
+    {
+      "case_id": "R23",
+      "source_id": "RICE_SALT",
+      "locator": "Indicators of salt injury in the field"
+    },
+    {
+      "case_id": "R24",
+      "source_id": "RICE_TG",
+      "locator": "Mục 5.4, Hình 20"
+    },
+    {
+      "case_id": "R25",
+      "source_id": "RICE_TG",
+      "locator": "Mục 4.6, Hình 13"
+    },
+    {
+      "case_id": "R26",
+      "source_id": "RICE_DIS",
+      "locator": "Mục 3.1.4.1: Leaf Scald – Symptoms, ảnh 17"
+    },
+    {
+      "case_id": "R27",
+      "source_id": "RICE_DIS",
+      "locator": "Mục 3.1.6: Stem Rot"
+    },
+    {
+      "case_id": "R27",
+      "source_id": "RICE_STEMROT",
+      "locator": "Mục Symptoms, đoạn mô tả vết sát mực nước"
+    },
+    {
+      "case_id": "R28",
+      "source_id": "RICE_AGGREGATE",
+      "locator": "Mục Symptoms, đoạn mô tả các vòng đồng tâm trên bẹ"
+    },
+    {
+      "case_id": "R29",
+      "source_id": "RICE_KERNEL",
+      "locator": "Mục Symptoms, mô tả bào tử trong từng hạt lúc gần chín"
+    },
+    {
+      "case_id": "R30",
+      "source_id": "RICE_SEEDROT",
+      "locator": "Mục Symptoms: Seed Rot and Seedling Diseases"
+    },
+    {
+      "case_id": "R31",
+      "source_id": "RICE_DIS",
+      "locator": "Mục 3.3.1: Tungro, ảnh 30"
+    },
+    {
+      "case_id": "R32",
+      "source_id": "RICE_DIS",
+      "locator": "Mục 3.4.1: Ufra or Stem Nematode, ảnh 33"
+    },
+    {
+      "case_id": "R33",
+      "source_id": "RICE_DIS",
+      "locator": "Mục 3.4.2: White Tip, ảnh 34"
+    }
+  ],
+  "case_scope": [
+    {
+      "case_id": "C13",
+      "dimension": "crop_type",
+      "value": "arabica"
+    },
+    {
+      "case_id": "C16",
+      "dimension": "growth_stage",
+      "value": "nursery"
+    },
+    {
+      "case_id": "C17",
+      "dimension": "growth_stage",
+      "value": "nursery"
+    },
+    {
+      "case_id": "C18",
+      "dimension": "growth_stage",
+      "value": "nursery"
+    }
+  ],
+  "source_region": [
+    {
+      "source_id": "CF_COL_VN",
+      "region": "Việt Nam"
+    },
+    {
+      "source_id": "CF_COL_WASI",
+      "region": "Việt Nam"
+    },
+    {
+      "source_id": "CF_DN",
+      "region": "Đắk Nông"
+    },
+    {
+      "source_id": "CF_INCAPER",
+      "region": "Brazil"
+    },
+    {
+      "source_id": "DUR_FLESH",
+      "region": "Lâm Đồng"
+    },
+    {
+      "source_id": "DUR_ID",
+      "region": "Indonesia"
+    },
+    {
+      "source_id": "DUR_MY",
+      "region": "Malaysia"
+    },
+    {
+      "source_id": "DUR_VEXANS",
+      "region": "Việt Nam"
+    },
+    {
+      "source_id": "RICE_AGGREGATE",
+      "region": "California, Hoa Kỳ"
+    },
+    {
+      "source_id": "RICE_KERNEL",
+      "region": "California, Hoa Kỳ"
+    },
+    {
+      "source_id": "RICE_SEEDROT",
+      "region": "California, Hoa Kỳ"
+    },
+    {
+      "source_id": "RICE_STEMROT",
+      "region": "California, Hoa Kỳ"
+    },
+    {
+      "source_id": "RICE_TG",
+      "region": "Tiền Giang"
+    }
+  ]
+}

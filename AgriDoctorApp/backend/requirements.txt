@@ -1,0 +1,2 @@
+# Includes a local FFmpeg binary for bounded audio validation.
+imageio-ffmpeg==0.6.0

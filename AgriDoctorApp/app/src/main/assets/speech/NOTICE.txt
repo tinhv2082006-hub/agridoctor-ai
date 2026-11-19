@@ -1,0 +1,11 @@
+Vietnamese offline speech model: vosk-model-small-vn-0.4
+Publisher: Alpha Cephei / Vosk
+Source: https://alphacephei.com/vosk/models/vosk-model-small-vn-0.4.zip
+Model listing and license: https://alphacephei.com/vosk/models
+License: Apache License 2.0
+Downloaded: 2026-11-19
+SHA-256: efe5c8494212110471a79befc48c79da679e5b1fc52a4ffb500222ff86d622e5
+
+Vosk Android runtime 0.3.75: https://github.com/alphacep/vosk-api
+Apache License 2.0. Copyright Alpha Cephei Inc.
+The model is included without modification. Recognition results require user review.

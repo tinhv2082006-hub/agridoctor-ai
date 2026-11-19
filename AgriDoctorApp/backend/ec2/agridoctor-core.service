@@ -1,0 +1,21 @@
+[Unit]
+Description=AgriDoctor knowledge and inference backend
+After=network.target
+
+[Service]
+DynamicUser=yes
+StateDirectory=agridoctor
+Environment=AGRIDOCTOR_STATE_DIR=/var/lib/agridoctor
+EnvironmentFile=/etc/agridoctor/backend.env
+WorkingDirectory=/opt/agridoctor/backend
+ExecStart=/opt/agridoctor/venv/bin/python server.py --port 8766
+Restart=on-failure
+RestartSec=3
+PrivateTmp=yes
+NoNewPrivileges=yes
+ProtectHome=yes
+UMask=0077
+MemoryMax=768M
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.plugin.compose'
+}
+
+// Public service URL only. Never put API keys or a shared server token in the APK.
+def serviceUrl = providers.gradleProperty('AGRIDOCTOR_SERVICE_URL').orElse('').get().trim().replaceAll('/+$', '')
+if (serviceUrl) {
+    def serviceUri = new URI(serviceUrl)
+    if (serviceUri.scheme != 'https' || !serviceUri.host || serviceUri.rawUserInfo || serviceUri.rawQuery || serviceUri.rawFragment) {
+        throw new GradleException('AGRIDOCTOR_SERVICE_URL must be an HTTPS service URL without credentials, query or fragment.')
+    }
+}
+
+android {
+    namespace 'vn.agridoctor.app'
+    compileSdk {
+        version = release(36) { minorApiLevel = 1 }
+    }
+
+    defaultConfig {
+        applicationId 'vn.agridoctor.app'
+        minSdk 23
+        targetSdk 36
+        versionCode 16
+        versionName '0.3.6'
+        buildConfigField 'String', 'AI_SERVICE_URL', '"' + serviceUrl.replace('\\', '\\\\').replace('"', '\\"') + '"'
+    }
+
+    buildFeatures {
+        compose true
+        buildConfig true
+    }
+    testOptions { unitTests.includeAndroidResources = true }
+}
+
+def knowledgeAssets = layout.buildDirectory.dir('generated/knowledge').get().asFile
+android.sourceSets.main.assets.srcDir knowledgeAssets
+def copyKnowledge = tasks.register('copyKnowledge', Copy) {
+    from rootProject.file('backend/agridoctor.sqlite')
+    into knowledgeAssets
+}
+tasks.named('preBuild').configure { dependsOn copyKnowledge }
+
+dependencies {
+    implementation 'com.alphacephei:vosk-android:0.3.75@aar'
+    implementation 'net.java.dev.jna:jna:5.18.1@aar'
+    implementation 'androidx.activity:activity-compose:1.13.0'
+    implementation 'androidx.compose.material3:material3-android:1.4.0'
+    implementation 'androidx.compose.runtime:runtime-android:1.9.2'
+    implementation 'androidx.exifinterface:exifinterface:1.4.2'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.18'
+}

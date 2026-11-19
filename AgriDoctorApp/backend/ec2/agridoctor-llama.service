@@ -1,0 +1,20 @@
+[Unit]
+Description=AgriDoctor Qwen3-4B CPU inference
+After=network.target
+
+[Service]
+DynamicUser=yes
+EnvironmentFile=/etc/agridoctor/llama.env
+WorkingDirectory=/opt/agridoctor/llama
+Environment=LD_LIBRARY_PATH=/opt/agridoctor/llama
+ExecStart=/opt/agridoctor/llama/llama-server -m /opt/agridoctor/llama/Qwen3-4B-Q4_K_M.gguf --alias agridoctor-qwen3-4b --host 127.0.0.1 --port 8767 -ngl 0 -t 2 -tb 2 -c 6144 -np 1 -b 256 -ub 128 --cache-ram 128 --reasoning off --reasoning-budget 0 --no-webui
+Restart=on-failure
+RestartSec=5
+PrivateTmp=yes
+ProtectHome=yes
+NoNewPrivileges=yes
+UMask=0077
+MemoryMax=5G
+
+[Install]
+WantedBy=multi-user.target

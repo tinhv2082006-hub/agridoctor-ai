@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quản trị trợ lý · AgriDoctor AI</title>
+<style>
+[hidden]{display:none!important}
+*{box-sizing:border-box}body{margin:0;background:#f6f7f3;color:#18372b;font:16px/1.55 system-ui,sans-serif}main{max-width:1050px;margin:auto;padding:30px 20px 60px}h1,h2,h3{line-height:1.15}h1{margin:5px 0 16px;font-size:clamp(30px,5vw,46px)}h2{font-size:22px;margin-top:0}header{padding-bottom:12px}article{display:grid;grid-template-columns:1.2fr 1fr;align-items:start;gap:18px}section{background:white;border:1px solid #cfdbd2;border-radius:17px;padding:22px;margin-bottom:16px}label{display:block;margin:10px 0}input,textarea,button,select{font:inherit}input:not([type=checkbox]),textarea,select{width:100%;padding:8px;border:1px solid #8ba393;border-radius:8px}textarea{resize:vertical}button{background:#20573c;color:white;border:0;border-radius:8px;padding:9px 15px;margin:4px 4px 4px 0;cursor:pointer}button.secondary{background:#e2eee6;color:#18452d}button:disabled{opacity:.5}summary{cursor:pointer;font-weight:650;padding:6px 0}small,#usage{color:#406450}#notice{position:sticky;top:0;background:#fff3cf;color:#554111;padding:7px 12px;border-radius:6px}#notice:empty{display:none}.choices{max-height:240px;overflow:auto}.chat{white-space:pre-wrap;border-left:3px solid #a7c6b0;padding-left:12px}.choices label{margin:3px 0}a{color:#20573c}@media(max-width:730px){article{display:block}}
+</style>
+<main><header>AgriDoctor AI<h1>Quản trị trợ lý</h1><div id="usage"></div></header><p role="status" id="notice"></p>
+<article id="controls" hidden><div><section><h2>Cấu hình hội thoại</h2>
+<label><input type="checkbox" id="enabled"> Cho phép người dùng chat</label>
+<label>Bộ xử lý hội thoại<select id="engine"><option value="local">AI chạy trên máy · Qwen3-4B</option><option value="lookup">Chỉ tra kho kiến thức</option><option value="gemini">Gemini · dịch vụ bên ngoài</option></select></label>
+<div id="localControls"><p id="localInfo"></p><button id="startLocal" class="secondary">Khởi động AI trên máy</button><button id="checkLocal" class="secondary">Kiểm tra lại</button><small>AI xử lý trên máy chủ của bạn, không gửi hội thoại tới dịch vụ AI bên ngoài. Máy chủ cần được bật khi dùng trợ lý.</small></div>
+<label>Lượt hỏi mỗi ngày, gồm cả thử nghiệm<input id="limit" type="number" min="0" max="5000"></label>
+<label>Cách trợ lý nói chuyện<textarea id="style" rows="3" maxlength="600"></textarea></label>
+<details id="cloudControls"><summary>Khóa Gemini trên máy chủ</summary><p id="keyInfo"></p>
+<label>Khóa API dùng cho phiên chạy này<input id="apiKey" type="password" autocomplete="off"></label><button id="saveKey">Lưu khóa vào bộ nhớ</button>
+<p><a href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">Mở Google AI Studio để lấy khóa</a></p></details></section>
+<section><h2>Kiến thức được dùng</h2><p>80 mục ban đầu được chủ dự án duyệt cho ứng dụng. Bỏ chọn để loại mục hoặc tài liệu khỏi câu trả lời mới.</p>
+<details><summary>Tình huống</summary><div id="cases" class="choices"></div></details>
+<details><summary>Tài liệu</summary><div id="sources" class="choices"></div></details></section>
+<button id="publish">Áp dụng cấu hình</button><button class="secondary" id="revert">Khôi phục bản trước</button></div>
+<section><h2>Thử bản nháp</h2><label>Cây trồng<select id="crop"><option value="rice">Lúa nước</option><option value="coffee">Cà phê</option><option value="durian">Sầu riêng</option></select></label>
+<div id="thread" class="chat"></div><p><small id="trace"></small></p><label>Tin nhắn<textarea maxlength="600" id="question" rows="3" placeholder="Bông lúa nhà tôi bạc trắng"></textarea></label>
+<button id="send">Gửi thử</button><button id="reset" class="secondary">Hội thoại mới</button></section></article></main>
+<script>
+const el=id=>document.getElementById(id);
+const token=location.hash.slice(1)||sessionStorage.getItem('agent-admin')||'';
+if(location.hash){sessionStorage.setItem('agent-admin',token);history.replaceState(null,'','/admin')}
+let state, turns=[];
+const say=text=>el('notice').textContent=text;
+async function api(path,body={}){
+  const res=await fetch('/admin/'+path,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+token},body:JSON.stringify(body)});
+  const data=await res.json();if(!res.ok)throw Error(data.error);return data;
+}
+function choices(id,rows,selected){
+  const box=el(id);box.replaceChildren();
+  for(const row of rows){const label=document.createElement('label'),check=document.createElement('input');
+    check.type='checkbox';check.value=row.id;check.checked=selected.includes(row.id);
+    label.append(check,document.createTextNode(' '+row.id+' · '+row.title));box.append(label)}
+}
+function usage(s){el('usage').textContent='Cấu hình '+s.version+' · '+s.calls+' lượt hôm nay · '+s.errors+' lần AI chuyển sang tra cứu'+(s.last_error?' · '+s.last_error:'');}
+function engineView(){el('localControls').hidden=el('engine').value!=='local';el('cloudControls').hidden=el('engine').value!=='gemini';}
+function localInfo(s){el('localInfo').textContent=s.local?.message||'Chưa có thông tin AI cục bộ.';el('startLocal').disabled=!!s.local?.ready;}
+function show(s){state=s;el('controls').hidden=false;usage(s);
+  el('enabled').checked=s.config.enabled;el('engine').value=s.config.engine||(s.config.cloud?'gemini':'lookup');engineView();localInfo(s);
+  for(const k of ['limit','style'])el(k).value=s.config[k];
+  for(const k of ['cases','sources'])choices(k,s[k],s.config[k]);
+  el('keyInfo').textContent=s.key?'Đã có khóa Gemini.':'Chưa có khóa. Trợ lý dùng kho tra cứu.';
+  el('revert').disabled=!s.previous;
+}
+function config(){const engine=el('engine').value;const c={enabled:el('enabled').checked,engine,cloud:engine==='gemini',limit:Number(el('limit').value),style:el('style').value};
+  for(const k of ['cases','sources'])c[k]=Array.from(el(k).querySelectorAll('input:checked'),i=>i.value);return c}
+function run(id,fn){el(id).onclick=async()=>{el(id).disabled=true;try{say('');await fn()}catch(e){say(e.message)}finally{el(id).disabled=id==='revert'&&!state?.previous}}}
+const clear=()=>{turns=[];el('thread').replaceChildren();el('trace').textContent=''};
+el('reset').onclick=clear;el('crop').onchange=clear;
+el('engine').onchange=()=>{engineView();clear()};
+run('startLocal',async()=>{const s=await api('local/start');localInfo(s);say('Đã yêu cầu khởi động. Bấm Kiểm tra lại sau vài giây.')});
+run('checkLocal',async()=>{const s=await api('state');usage(s);localInfo(s)});
+run('saveKey',async()=>{const s=await api('key',{key:el('apiKey').value.trim()});el('apiKey').value='';el('keyInfo').textContent=s.key?'Đã có khóa Gemini.':'';say('Đã nhận khóa cho phiên chạy này.')});
+run('publish',async()=>{show(await api('publish',{version:state.version,config:config()}));say('Đã áp dụng cấu hình.')});
+run('revert',async()=>{show(await api('revert',{version:state.version}));say('Đã khôi phục cấu hình trước.')});
+run('send',async()=>{const text=el('question').value.trim();if(!text)return;
+  el('reset').disabled=true;el('crop').disabled=true;el('engine').disabled=true;say('Trợ lý đang trả lời. Lần đầu có thể lâu hơn.');
+  try {
+  const messages=[...turns.slice(-8),{role:'user',text}];const r=await api('preview',{crop_id:el('crop').value,messages,config:config()});
+  turns=[...messages,{role:'assistant',text:r.answer}];el('thread').append(document.createTextNode('Bạn · '+text+'\n'+r.mode+' · '+r.answer+'\n'+r.sources.map(s=>s.title+' · '+s.locator).join('\n')+'\n\n'));el('question').value='';
+  const stages={social:'Chào hỏi',context:'Hỏi bối cảnh',clarify:'Hỏi dấu hiệu',compare:'Đối chiếu các khả năng',observe:'Hướng dẫn quan sát',explain:'Giải thích từ tài liệu',boundary:'Giới hạn tư vấn',crop_mismatch:'Chọn lại cây'};
+  el('trace').textContent=r.workflow?(stages[r.workflow.stage]||'Tra cứu')+' · '+r.sources.length+' nguồn tham chiếu':'';
+  usage(await api('state'));say('');
+  } finally {el('reset').disabled=false;el('crop').disabled=false;el('engine').disabled=false}
+});
+api('state').then(show).catch(e=>say(e.message+' Mở lại tệp Mo_Tro_Ly.cmd trong thư mục AgriDoctorApp để nhận liên kết đúng phiên.'));
+</script></html>

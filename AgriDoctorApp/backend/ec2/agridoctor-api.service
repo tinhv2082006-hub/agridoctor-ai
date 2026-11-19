@@ -1,0 +1,19 @@
+[Unit]
+Description=AgriDoctor private FastAPI server
+Requires=agridoctor-core.service
+After=agridoctor-core.service
+
+[Service]
+DynamicUser=yes
+WorkingDirectory=/opt/agridoctor/backend
+ExecStart=/opt/agridoctor/venv/bin/python -m uvicorn ec2_api:app --host 127.0.0.1 --port 8765 --workers 1 --limit-concurrency 12 --timeout-keep-alive 3 --no-proxy-headers --no-access-log
+Restart=on-failure
+RestartSec=3
+PrivateTmp=yes
+NoNewPrivileges=yes
+ProtectHome=yes
+UMask=0077
+MemoryMax=384M
+
+[Install]
+WantedBy=multi-user.target
